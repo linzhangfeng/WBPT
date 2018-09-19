@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:layout_width="@dimen/hz_pay_dimen_796"
+		android:layout_height="@dimen/hz_pay_dimen_500"
+		android:layout_gravity="center"
+		android:background="@color/hz_pay_f3f3f3"
+		android:orientation="vertical">
+
+		<FrameLayout
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/hz_pay_dimen_92">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:layout_marginLeft="@dimen/hz_pay_dimen_26"
+				android:text="@string/hz_pay_card_choice_text"
+				android:textColor="@color/hz_pay_0082cb"
+				android:textSize="@dimen/hz_pay_dimen_36"/>
+		</FrameLayout>
+
+		<GridView
+			android:id="@+id/hz_pay_denomination_gv"
+			android:layout_width="@dimen/hz_pay_dimen_742"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:cacheColorHint="#00000000"
+			android:fadingEdge="none"
+			android:horizontalSpacing="@dimen/hz_pay_dimen_16"
+			android:listSelector="@android:color/transparent"
+			android:numColumns="2"
+			android:verticalSpacing="@dimen/hz_pay_dimen_16"/>
+	</LinearLayout>
+</FrameLayout>

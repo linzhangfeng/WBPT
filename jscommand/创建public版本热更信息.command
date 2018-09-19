@@ -1,0 +1,1 @@
+node version_generator.js  -s Resources/js -d Resources/js/public/version/ -sEx public/,script/ -vEx public/version/  -v 2.0.02

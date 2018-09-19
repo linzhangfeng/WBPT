@@ -1,0 +1,89 @@
+package proto.game.guizhou;
+//import "gameproto.proto";
+
+//鸡牌结构体
+message tagJiPai
+{
+	optional int32 Jipai	= 1;
+	optional bool  IsJinJi	= 2; 
+}
+//固定组合牌
+message FixedCard
+{
+    optional int32    CardData = 1;		    //碰杠的牌
+    optional int32    state = 2;			//碰杠类型
+	optional int32    chairID = 3;          //引起操作的椅子ID(主要是为了记录碰、直杠谁的牌)
+	optional bool	  HanBaoDou = 4;		//是否是憨包豆
+}
+//手牌
+message HandCards
+{
+	optional int32      ChangeableCardsLen = 1;
+    repeated int32      ChangeableCards = 2;
+    optional int32      FixedCardsLen = 3;
+	repeated FixedCard  stFixedCards = 4;
+}
+//广播翻开的鸡牌
+message AckGetJiPai
+{
+	repeated tagJiPai getJiPai = 1; //鸡牌
+	optional bool IsManTangJi = 2; //是否满堂鸡
+	repeated HandCards UserCard = 3;		//玩家手牌
+}
+
+//四个人拥有的鸡牌
+message tagAllJiPais
+{
+	repeated int32  JiPais = 1;				//所有鸡牌
+	repeated bool	IsJinJi = 2;			//是否是金鸡
+}
+
+//贵州麻将结算
+message tagGuiZhouEndInfo
+{
+	repeated int32	JiNums = 1;				//鸡牌张数	
+	repeated int32  JiScores = 2;			//获得鸡分
+	optional bool	IsCheckDaJiao = 3;		//是否查叫
+	repeated int32	HuFanType = 4;			//胡番类型
+	repeated int32	HuFanNums = 5;			//胡番数
+	repeated tagAllJiPais  AllJiPais = 6;	//所有鸡牌
+	optional int32  ChongFengJiID = 7;		//冲锋鸡座位号
+	optional int32  ZeRenJiID = 8;			//责任鸡座位号
+	optional bool	IsBaoJi = 9;			//是否包鸡
+	repeated bool	IsBaoTing = 10;			//是否报听 
+}
+
+//广播报听成功
+message AckBaoTingSucc
+{
+	required int32 ChairID = 1;			//报听的座位号
+}
+
+//贵州桌面信息
+message tagGuiZhouTableInfo
+{
+	optional bool IsBaoTingShaBao = 1; //是否报听胡牌和杀报
+	repeated tagJiPai getJiPai = 2; //鸡牌
+	optional bool IsManTangJi = 3; //是否满堂鸡
+	repeated bool IsBaoTing = 4;  //四个玩家报听情况
+}
+
+//贵州麻将杠牌信息
+message tagGuiZhouGang
+{
+	optional bool IsHanBaoDou = 1; //是否憨包豆
+}
+
+//贵州麻将出牌信息
+message tagGuiZhouOutCard
+{
+	optional bool IsChongFengJi = 1;	//是否为冲锋鸡
+}
+
+//贵州麻将操作结果
+message tagGuiZhouOpResult
+{
+	optional bool IsZeRenJi = 1;	//是否为责任鸡
+	optional int32 ZeRenJiType = 2;	//责任鸡类型
+}
+

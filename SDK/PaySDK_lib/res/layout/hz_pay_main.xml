@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:id="@+id/hz_pay_main_layout"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/hz_pay_white"
+	android:orientation="vertical"
+	android:visibility="invisible">
+
+	<FrameLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/hz_pay_32353c">
+
+		<Button
+			android:id="@+id/hz_pay_back_btn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="left"
+			android:background="@drawable/hz_pay_back_select"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:text="@string/hz_pay_title_text"
+			android:textColor="@color/hz_pay_white"
+			android:textSize="@dimen/hz_pay_dimen_36"/>
+	</FrameLayout>
+
+	<FrameLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<include
+			android:id="@+id/hz_pay_choice_layout"
+			layout="@layout/hz_pay_choice"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"/>
+
+		<include
+			android:id="@+id/hz_pay_card_layout"
+			layout="@layout/hz_pay_card"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:visibility="gone"/>
+	</FrameLayout>
+
+</LinearLayout>

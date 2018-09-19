@@ -1,0 +1,1 @@
+node version_generator.js -u chess_img/game/apk/2101/ -s Resources -d Resources/version/ddz/ -sEx js/ddz/,js/public/,script/ -vEx version/ddz/  -v 0.0.0

@@ -1,0 +1,1 @@
+node version_generator.js  -s Resources/js -d Resources/js/phz/version/ -sEx phz/ -vEx phz/version/  -v 2.0.20

@@ -1,0 +1,966 @@
+{
+  "ID": "5492cde3-b68a-4aca-a55e-95f0be9df59b",
+  "Version": "2.3.4",
+  "Name": "ddzUserInfo",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Children": [
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 153,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 45,
+            "ActionTag": -748165172,
+            "Size": {
+              "X": 1280.0,
+              "Y": 720.0
+            },
+            "Name": "mask",
+            "ctype": "PanelObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "public/icon_bg_009.png",
+              "Plist": "img/dialog.plist"
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 208,
+            "Scale9OriginY": 62,
+            "Scale9Width": 216,
+            "Scale9Height": 64,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 640.0,
+              "Y": 360.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PositionPercentXEnabled": true,
+            "PositionPercentYEnabled": true,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 0.4938,
+              "Y": 0.8056
+            },
+            "LeftMargin": 324.0,
+            "RightMargin": 324.0,
+            "TopMargin": 70.0,
+            "BottomMargin": 70.0,
+            "Tag": 47,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/icon_bg_203.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 316.0,
+                  "Y": 520.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.8966
+                },
+                "PreSize": {
+                  "X": 0.9462,
+                  "Y": 0.1414
+                },
+                "LeftMargin": 17.0,
+                "RightMargin": 17.0,
+                "TopMargin": 19.0,
+                "BottomMargin": 479.0,
+                "Tag": 3,
+                "Children": [
+                  {
+                    "FontSize": 36,
+                    "LabelText": "玩家信息",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 299.0,
+                      "Y": 41.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.2408,
+                      "Y": 0.5122
+                    },
+                    "LeftMargin": 227.0,
+                    "RightMargin": 227.0,
+                    "TopMargin": 20.0,
+                    "BottomMargin": 20.0,
+                    "Tag": 8,
+                    "ActionTag": 1708256389,
+                    "Size": {
+                      "X": 144.0,
+                      "Y": 42.0
+                    },
+                    "Name": "Text_1",
+                    "ctype": "TextObjectData"
+                  }
+                ],
+                "ActionTag": 653826711,
+                "Size": {
+                  "X": 598.0,
+                  "Y": 82.0
+                },
+                "Name": "public_icon_bg_203_1",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/icon_bg_200.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 316.0,
+                  "Y": 54.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.0931
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 0.1103
+                },
+                "LeftMargin": 17.0,
+                "RightMargin": 17.0,
+                "TopMargin": 494.0,
+                "BottomMargin": 22.0,
+                "Tag": 7,
+                "ActionTag": -1787723538,
+                "Size": {
+                  "X": 598.0,
+                  "Y": 64.0
+                },
+                "Name": "public_icon_bg_200_1",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/icon_bg_202.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 16,
+                "Scale9OriginY": 16,
+                "Scale9Width": 18,
+                "Scale9Height": 18,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 178.0,
+                  "Y": 256.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2816,
+                  "Y": 0.4414
+                },
+                "PreSize": {
+                  "X": 0.4051,
+                  "Y": 0.0966
+                },
+                "LeftMargin": 50.0,
+                "RightMargin": 326.0,
+                "TopMargin": 296.0,
+                "BottomMargin": 228.0,
+                "Tag": 22,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "public/icon_sex0.png",
+                      "Plist": "img/dialog.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 35.0,
+                      "Y": 25.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1367,
+                      "Y": 0.4464
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 20.5,
+                    "RightMargin": 206.5,
+                    "TopMargin": 13.0,
+                    "BottomMargin": 7.0,
+                    "Tag": 36,
+                    "ActionTag": -683946377,
+                    "Size": {
+                      "X": 29.0,
+                      "Y": 36.0
+                    },
+                    "Name": "sex1",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "public/icon_sex1.png",
+                      "Plist": "img/dialog.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 35.0,
+                      "Y": 25.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1367,
+                      "Y": 0.4464
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 23.0,
+                    "RightMargin": 209.0,
+                    "TopMargin": 11.0,
+                    "BottomMargin": 5.0,
+                    "Tag": 37,
+                    "ActionTag": -1541713588,
+                    "Size": {
+                      "X": 24.0,
+                      "Y": 40.0
+                    },
+                    "Name": "sex2",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FontSize": 26,
+                    "LabelText": "12345678..",
+                    "VerticalAlignmentType": "VT_Center",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 65.0,
+                      "Y": 25.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2539,
+                      "Y": 0.4464
+                    },
+                    "PreSize": {
+                      "X": 0.2408,
+                      "Y": 0.5122
+                    },
+                    "LeftMargin": 65.0,
+                    "RightMargin": 61.0,
+                    "TopMargin": 15.5,
+                    "BottomMargin": 9.5,
+                    "Tag": 34,
+                    "ActionTag": 1292298220,
+                    "Size": {
+                      "X": 130.0,
+                      "Y": 31.0
+                    },
+                    "Name": "name",
+                    "ctype": "TextObjectData"
+                  }
+                ],
+                "ActionTag": 43695215,
+                "Size": {
+                  "X": 256.0,
+                  "Y": 56.0
+                },
+                "Name": "nameBg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/icon_bg_202.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 16,
+                "Scale9OriginY": 16,
+                "Scale9Width": 18,
+                "Scale9Height": 18,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 456.0,
+                  "Y": 256.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7215,
+                  "Y": 0.4414
+                },
+                "PreSize": {
+                  "X": 0.4051,
+                  "Y": 0.0966
+                },
+                "LeftMargin": 328.0,
+                "RightMargin": 48.0,
+                "TopMargin": 296.0,
+                "BottomMargin": 228.0,
+                "Tag": 23,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "public/icon_coin.png",
+                      "Plist": "img/dialog.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 35.0,
+                      "Y": 25.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1367,
+                      "Y": 0.4464
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 12.5,
+                    "RightMargin": 198.5,
+                    "TopMargin": 8.0,
+                    "BottomMargin": 2.0,
+                    "Tag": 38,
+                    "ActionTag": 287152316,
+                    "Size": {
+                      "X": 45.0,
+                      "Y": 46.0
+                    },
+                    "Name": "public_icon_coin_4",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FontSize": 26,
+                    "LabelText": "12345678..",
+                    "VerticalAlignmentType": "VT_Center",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 65.0,
+                      "Y": 25.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2539,
+                      "Y": 0.4464
+                    },
+                    "PreSize": {
+                      "X": 0.2408,
+                      "Y": 0.5122
+                    },
+                    "LeftMargin": 65.0,
+                    "RightMargin": 61.0,
+                    "TopMargin": 15.5,
+                    "BottomMargin": 9.5,
+                    "Tag": 39,
+                    "ActionTag": -662395910,
+                    "Size": {
+                      "X": 130.0,
+                      "Y": 31.0
+                    },
+                    "Name": "coin",
+                    "ctype": "TextObjectData"
+                  }
+                ],
+                "ActionTag": 1886701144,
+                "Size": {
+                  "X": 256.0,
+                  "Y": 56.0
+                },
+                "Name": "coinBg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/icon_bg_202.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 16,
+                "Scale9OriginY": 16,
+                "Scale9Width": 18,
+                "Scale9Height": 18,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 316.0,
+                  "Y": 156.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.269
+                },
+                "PreSize": {
+                  "X": 0.8481,
+                  "Y": 0.1897
+                },
+                "LeftMargin": 48.0,
+                "RightMargin": 48.0,
+                "TopMargin": 369.0,
+                "BottomMargin": 101.0,
+                "Tag": 33,
+                "Children": [
+                  {
+                    "FontSize": 28,
+                    "LabelText": "胜局/参与局数",
+                    "VerticalAlignmentType": "VT_Center",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 25.0,
+                      "Y": 75.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0466,
+                      "Y": 0.6818
+                    },
+                    "PreSize": {
+                      "X": 0.2408,
+                      "Y": 0.5122
+                    },
+                    "LeftMargin": 25.0,
+                    "RightMargin": 371.0,
+                    "TopMargin": 19.0,
+                    "BottomMargin": 59.0,
+                    "Tag": 40,
+                    "ActionTag": 57283033,
+                    "Size": {
+                      "X": 175.0,
+                      "Y": 32.0
+                    },
+                    "Name": "Text_1_0_0_0",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FontSize": 28,
+                    "LabelText": "胜率",
+                    "VerticalAlignmentType": "VT_Center",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 25.0,
+                      "Y": 30.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0466,
+                      "Y": 0.2727
+                    },
+                    "PreSize": {
+                      "X": 0.2408,
+                      "Y": 0.5122
+                    },
+                    "LeftMargin": 25.0,
+                    "RightMargin": 371.0,
+                    "TopMargin": 64.0,
+                    "BottomMargin": 14.0,
+                    "Tag": 42,
+                    "ActionTag": -1940410350,
+                    "Size": {
+                      "X": 56.0,
+                      "Y": 32.0
+                    },
+                    "Name": "Text_1_0_0_0_0",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FontSize": 28,
+                    "LabelText": "12345678..",
+                    "HorizontalAlignmentType": "HT_Right",
+                    "VerticalAlignmentType": "VT_Center",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 510.0,
+                      "Y": 75.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.9515,
+                      "Y": 0.6818
+                    },
+                    "PreSize": {
+                      "X": 0.2408,
+                      "Y": 0.5122
+                    },
+                    "LeftMargin": 370.0,
+                    "RightMargin": 26.0,
+                    "TopMargin": 19.0,
+                    "BottomMargin": 59.0,
+                    "Tag": 43,
+                    "ActionTag": 254271699,
+                    "Size": {
+                      "X": 140.0,
+                      "Y": 32.0
+                    },
+                    "Name": "record",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FontSize": 28,
+                    "LabelText": "12345678..",
+                    "HorizontalAlignmentType": "HT_Right",
+                    "VerticalAlignmentType": "VT_Center",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 510.0,
+                      "Y": 30.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.9515,
+                      "Y": 0.2727
+                    },
+                    "PreSize": {
+                      "X": 0.2408,
+                      "Y": 0.5122
+                    },
+                    "LeftMargin": 370.0,
+                    "RightMargin": 26.0,
+                    "TopMargin": 64.0,
+                    "BottomMargin": 14.0,
+                    "Tag": 44,
+                    "ActionTag": -1588969619,
+                    "Size": {
+                      "X": 140.0,
+                      "Y": 32.0
+                    },
+                    "Name": "rate",
+                    "ctype": "TextObjectData"
+                  }
+                ],
+                "ActionTag": 2111382081,
+                "Size": {
+                  "X": 536.0,
+                  "Y": 110.0
+                },
+                "Name": "recordBg",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": 133517170,
+            "Size": {
+              "X": 632.0,
+              "Y": 580.0
+            },
+            "Name": "Image_4",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "PressedFileData": {
+              "Type": "PlistSubImage",
+              "Path": "public/btn_122.png",
+              "Plist": "img/dialog.plist"
+            },
+            "NormalFileData": {
+              "Type": "PlistSubImage",
+              "Path": "public/btn_022.png",
+              "Plist": "img/dialog.plist"
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 48,
+            "Scale9Height": 52,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 894.0,
+              "Y": 594.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6984,
+              "Y": 0.825
+            },
+            "PreSize": {
+              "X": 0.0609,
+              "Y": 0.1028
+            },
+            "LeftMargin": 855.0,
+            "RightMargin": 347.0,
+            "TopMargin": 89.0,
+            "BottomMargin": 557.0,
+            "Tag": 9,
+            "ActionTag": 636826005,
+            "Size": {
+              "X": 78.0,
+              "Y": 74.0
+            },
+            "Name": "returnBtn",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "public/icon_bg_007.png",
+              "Plist": "img/dialog.plist"
+            },
+            "Scale9Width": 97,
+            "Scale9Height": 97,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 640.0,
+              "Y": 460.0
+            },
+            "Scale": {
+              "ScaleX": 1.6,
+              "ScaleY": 1.6
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PositionPercentXEnabled": true,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.6389
+            },
+            "PreSize": {
+              "X": 0.0758,
+              "Y": 0.1347
+            },
+            "LeftMargin": 591.5,
+            "RightMargin": 591.5,
+            "TopMargin": 211.5,
+            "BottomMargin": 411.5,
+            "Tag": 48,
+            "ActionTag": -1116145286,
+            "Size": {
+              "X": 97.0,
+              "Y": 97.0
+            },
+            "Name": "icon",
+            "ctype": "ImageViewObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1280.0,
+          "Y": 720.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "img/dialog.plist",
+        "img/dialog.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

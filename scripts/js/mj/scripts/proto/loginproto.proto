@@ -1,0 +1,210 @@
+
+//package com.ihuizhi.network.mahjong.protobuf;
+package proto.login;
+
+//客户端上行结构体
+//请求登陆
+message ReqLogin
+{
+	required int32   uid      = 1; 		//uid
+	optional string  skey     = 4;
+	optional int32   roomid   = 5;
+	optional string   deviceId = 6;		//设备号
+	optional int32   base_money  = 7;      //底注
+	optional int32   stand_money = 8; //下桌分数线
+}
+
+//请求退出房间
+message ReqLogout
+{
+	required int32   uid      = 1; 		//uid
+}
+
+//准备
+message ReqReady
+{
+	required int32 uid = 1; 		//uid
+	optional int32 seatid = 2;
+}
+
+//上桌下桌请求
+message ReqTableAction
+{
+	required int32 uid = 1; 		//uid
+	optional int32 roomid = 2;
+}
+
+//心跳包
+message ReqHeatBeat
+{
+   required int32 state = 1;
+}
+//请求所有玩家信息（旁观）
+message AllLookOnUserReq
+{
+    required int32 start_index = 1;    //开始序号
+	optional int32 end_index = 2;      //结束序号
+}
+//互动表情
+message ReqEmotion
+{
+    required int32 seatid = 1;
+	optional int32 target_seatid = 2;
+	optional int32 target_seat_num = 3;
+	optional int32 type = 4;
+}
+//服务端下发结构体
+//登录成功返回（单播）
+message AckLoginSuccessUc
+{
+	required int32 seatid = 1; 		
+	optional string avatar = 2;
+	optional int32 coin = 3;			
+	optional int32 exp = 4;
+	optional int32 money = 5;			
+	optional string name = 6;
+	optional int32 ready = 7;			
+	optional int32 rmb = 8;
+	optional int32 see = 9;			
+	optional int32 sex = 10;
+	optional int32 total_board = 11;			
+	optional int32 total_win = 12;
+	optional int32 uid = 13;			
+	optional int32 vlevel = 14;
+}
+
+   
+//登录成功返回（广播）
+message AckLoginSuccessBc
+{
+	required int32 seatid = 1; 		//
+	optional int32 uid = 2;
+	optional int32 money = 3;
+	optional string name = 4;			//
+	optional string avatar = 5;//头像
+	optional int32 sex = 6;	
+}
+
+//登陆错误
+message AckLoginError
+{
+	required int32 uid       = 1;
+	optional int32 code      = 2;
+}
+
+message tagPlayers
+{
+	required int32	uid = 1;
+	optional int32	seatid = 2;
+	optional int32 ready = 3;//0表示没有准备，非0表示已经准备
+	optional int32 money = 4;
+	optional string name = 5;
+	optional int32 sex = 6;
+	optional string avatar = 7;//头像
+}
+//牌桌信息
+message AckTableInfo
+{
+	required int32 seatid = 1; 		//玩家的椅子id
+	optional int32 state = 2;	//游戏状态
+	optional int32 stand_money = 3;			//下桌分数线
+	optional int32 base_money = 4;		//初始带入
+	repeated tagPlayers players = 5;//桌子上的玩家
+	
+}
+
+//玩家退出房间请求返回(广播)
+message AckLogoutBc
+{
+	required int32 seatid = 1; 		//桌子id
+	optional int32 uid = 2;
+	optional int32 type = 3;	//
+}
+//上桌成功
+message  AckUpTableSuccess
+{
+    required int32 uid = 1;
+	optional int32 seatid = 2;
+	optional int32 ready = 3;
+	optional string name = 4;
+	optional int32 sex = 5;
+	optional string avatar = 6;
+	optional int32 money = 7;
+	optional int32 coin = 8;
+	optional int32 exp = 9;
+	optional int32 pcount = 10;
+	optional int32 vlevel = 11;
+	optional string ps =12;
+}
+//上桌失败
+message AckUpTableErrorUc
+{
+    required int32 uid = 1;
+	optional int32 money = 2;
+	optional int32 code = 3;
+}
+
+//游戏过程中选择下桌返回
+message AckAheadDownTable
+{
+    required int32 uid = 1;
+	optional int32 seatid = 2;
+	optional int32 down_tag = 3; //1：游戏结束自动下桌
+}
+
+//下桌成功返回
+message AckDownTableSuccess
+{
+    required int32 uid = 1;
+	optional int32 seatid = 2;
+	optional int32 money = 3;
+}
+//请求上桌列表信息
+message AckUpTableInfoReq
+{
+    required int32 start_index = 1; //起始位置
+	optional int32 end_index = 2;	//结束位置
+}
+//上桌列表信息（请求上桌和下桌成功都会返回此消息(对应上桌成功过和 下桌成功协议码)）
+message AckUpTableInfo_UC
+{
+    repeated tagPlayers players = 1;//玩家信息
+	optional int32 rank = 2;		//我的排名信息
+	optional int32 number = 3;		//列表的总人数
+	optional int32 down_tag = 4;	
+	optional int32 limit_money = 5;
+	optional int32 stand_money = 6;	//下桌分数线
+	optional int32 base_money = 7;
+	optional int32 left_len = 8;	//请求后剩余长度
+}
+
+message AckUpTableInfo_BC
+{
+    repeated tagPlayers players = 1;
+}
+//旁观列表返回
+message AckAllLookOnUserResp
+{
+   repeated tagPlayers players = 1;    //玩家信息数组
+   optional int32 left_len = 2;        //剩余长度
+}
+//心跳包返回
+message AckHeatBeat
+{
+   required int32 state = 1;
+}
+
+//广播下一局开赛
+message AckPrereadyBC
+{
+   required int32 roomid = 1; //房间号
+}
+//广播互动表情
+message AckEmotionBC
+{
+    required int32 seatid = 1;
+	optional int32 money = 2;
+	optional int32 target_seatid = 3;
+	optional int32 target_seat_num = 4;
+	optional int32 type = 5;
+}

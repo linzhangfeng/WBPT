@@ -1,0 +1,65 @@
+package proto.game.gdmahjonggame;
+//开始圈风 (对应cmd SERVER_BEGIN_QUAN_FENG)
+message AckBeginQuanFeng
+{
+    repeated int32 QuanFengCard = 1;    //圈风牌数据 （4个大小数组，第一张牌代表座位ID为0的玩家的风 依次类推）
+}
+message gdgamescene
+{
+    repeated int32 QuanFengCard = 1;    //圈风牌数据
+	optional int32 QuanFeng = 2;        //当前圈风
+	repeated HuaPaiInfo HuaPai = 3;     //花牌信息
+	optional int32 PlayID = 4;         //0鸡胡玩法 1推倒胡玩法
+	optional int32 CurJoker = 5;        //当前癞子
+}
+//游戏开始
+message AckGameStart
+{
+	required int32 bankerid = 1; 		//庄家椅子id
+	optional int32 quanfeng  = 2;        //当前圈风
+}
+//抄庄达成
+message AckCopyBankerReack
+{
+    optional int32 CopyBanker = 1;     //抄庄达成(0 否 1达成)
+}
+//花牌信息
+message HuaPaiInfo
+{
+    optional int32 HuaCount = 1;       //花牌长度
+	repeated int32 HuaCard = 2;        //花牌数据
+}
+//另加番信息
+message AddFanInfo
+{
+    optional int32 AddType = 1;          //另加番类型(0自摸 1风位 2风圈 3 三元牌)
+	optional int32 AddNum = 2;           //番数
+}
+
+//番数信息
+message FanInfo
+{   
+    optional int32 chairID = 1;           //椅子ID  
+	optional int32 isBaoHu = 2;           //是否是爆胡(0否 1是)
+	optional int32 BaoPai= 3;             //是否包自摸(0否 1包自摸 2包牌)
+	optional int32 EndType = 4;            //0表示无，1表示自摸，2表示点炮胡，3表示放炮,4 被自摸
+	optional int32 SpecialType = 5;        //详细结算胡牌类型 1表示自摸，2表示点炮胡，3表示放炮,4 被自摸 5包自摸 6被包自摸 7包牌 8天和 9地和 10人和 11抢杠胡 12海底捞月 13杠上开花
+    optional int32 FanType = 6;          //番型  (如果为推倒胡玩法 0表示小胡 1表示大胡)
+	optional int32 FanNum = 7;           //番数  (如果为推倒胡玩法 表示倍数)
+	repeated AddFanInfo addfan = 8;      //另加番信息(推倒胡玩法此项为空)
+}
+//结算操庄信息
+message CopyBankerInfo
+{
+    optional int32 bCopy = 1;    //是否被抄庄(1被抄庄 2抄庄)
+	optional int32 Score = 2;    //分数
+}
+//广东麻将结算信息
+message gdmjGameEndInfo
+{   
+    repeated HuaPaiInfo HuaPai = 1;        //花牌信息
+	repeated FanInfo    faninfo = 2;       //番数信息
+	repeated int32      HuaPaiScore = 3;   //花牌得分
+	repeated int32      HuScore  = 4;      //个玩家胡牌输赢分数（不是总分数 ）
+	repeated CopyBankerInfo      CopyBankerScore = 5;  //抄庄分数信息  
+}

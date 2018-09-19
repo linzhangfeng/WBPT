@@ -1,0 +1,217 @@
+
+//package com.ihuizhi.network.mahjong.protobuf;
+
+package proto.game.hunanmj;
+
+enum E_BUZHANG
+{
+	BUZHANG_ZHIGANG = 2;
+	BUZHANG_WANGANG = 4;
+	BUZHANG_ANGANG = 8;
+}
+
+//结算，胡牌、杠牌信息宏定义
+enum HUGANG
+{
+	HUGANG_PENG = 1;				//碰
+	HUGANG_ZHIGANG = 2;				//直杠
+	HUGANG_WANGANG = 4;				//弯杠
+	HUGANG_ANGANG = 8;				//暗杠
+	HUGANG_HU = 16;					//胡
+	HUGANG_LISTEN = 32;				//听
+	HUGANG_LEFT_CHI = 64;			//左吃
+    HUGANG_CENTER_CHI = 128;		//中吃
+	HUGANG_RIGHT_CHI = 256;		//右吃
+}
+
+enum JiangmaType
+{
+	JIANGMA = 1;					//奖码
+	MOJIJIANGJI = 2;				//摸几奖几
+	ZHUANIAO = 3;					//抓鸡
+}
+	
+enum HunanLocation
+{
+	HUNAN_CHANGSHA = 1;		//长沙
+	HUNAN_CHENZHOU = 2;		//郴州
+	HUNAN_SHAOYANG = 3;		//邵阳
+	HUNAN_CHANGDE = 4;		//常德
+	HUNAN_HONGZHONG = 5;	//红中
+	HUNAN_ZHUANZHUAN = 6;	//转转
+}
+enum WinType
+{
+	WINTYPE_LOSE = 0;				//没有胡
+	WINTYPE_JIULIANBAODENG = 1;		//九莲宝灯
+	WINTYPE_DASIXI = 2;				//大四喜
+	WINTYPE_XIAOSIXI = 3;			//小四喜
+	WINTYPE_DASANYUAN = 4;			//大三元 
+	WINTYPE_SIANKE = 5;				//四暗刻
+	WINTYPE_SHIBALUOHAN = 6;		//十八罗汉
+	WINTYPE_QINGYAOJIU = 7;			//清幺九
+	WINTYPE_ZIYISE = 8;				//字一色
+	WINTYPE_XIAOSANYUAN = 9;		//小三元
+	WINTYPE_HUNYAOJIU = 10;			//混幺九
+	WINTYPE_QINGDUI = 11;			//清对，清一色+碰碰胡
+	WINTYPE_QINPENG = 12;			//清碰， 清一色 + 碰碰胡
+	WINTYPE_HUNPENG = 13;			//混碰, 混一色 + 碰碰胡
+	WINTYPE_QINGYISE = 14;			//清一色
+	WINTYPE_HUNYISE = 15;			//混一色
+	WINTYPE_PENGPENGHU =16;			//碰碰胡
+	WINTYPE_PINGHU = 17;			//平胡
+	WINTYPE_JIHU = 18;				//鸡胡
+	WINTYPE_TIANHU = 19;			//天胡
+	WINTYPE_DIHU = 20;				//地胡
+	WINTYPE_RENHU = 21;				//人胡
+	WINTYPE_QIANGGANGHU = 22;		//抢杠胡
+	WINTYPE_HAIDILAOYUE = 23;		//海底捞月
+	WINTYPE_GANGSHANGHUA = 24;		//杠上花
+	WINTYPE_LONGQIDUi = 25;			//清七对
+	WINTYPE_QINGLONGQIDUI = 26;		//清龙七对
+	WINTYPE_QINQIDUI = 27;			//龙七对
+	WINTYPE_QUANQIUREN = 28;		//全求人
+	WINTYPE_GANGSHANGPAO = 29;		//杠上炮
+	WINTYPE_MENQING = 30;			//门前清
+	WINTYPE_FENGYISE = 31;			//风一色
+	WINTYPE_MENQINGQINGYISE = 32; 	//门前清 + 清一色
+	WINTYPE_QINGSIANKE = 33;		//清一色 + 四暗刻	
+	WINTYPE_HAIDPAI	= 34;			//海底炮
+	WINTYPE_SHISANYAO = 35;			//十三幺
+	WINTYPE_QIDUI = 36;						//七对		
+	WINTYPE_DAIYAOJIU = 37;					//带幺九	
+	WINTYPE_JIANGDUI = 38;					//将对, 258做将
+	
+	WINTYPE_CHANGSHA_SIXI = 512;				//长沙 四喜
+	WINTYPE_CHANGSHA_BANBANHU = 513;			//长沙板板胡
+	WINTYPE_CHANGSHA_QUEYIMEN = 514;			//长沙缺一门
+	WINTYPE_CHANGSHA_LIULIUSHUN = 515;			//长沙六六顺
+	WINTYPE_CHANGSHA_PENGPENGHU = 516;			//长沙碰碰胡
+	WINTYPE_CHANGSHA_JIANGJIANGHU = 517;		//长沙将将胡
+	WINTYPE_CHENZHOU_SIZHONGHU = 518;			//郴州4个红中胡
+}
+//只需要把所有的配置整理出来，然后各个地区固定相关配置项即可
+
+
+//客户端上传结构体
+
+//选择飘的数
+message ReqChoosePiao
+{
+	optional int32 PiaoNum = 1;			//飘的大小，0表示不飘
+}
+
+//服务端下发结构体
+
+//开始选择飘
+message AckStartPiao
+{
+	repeated int32 piaoNum = 1;			//飘的倍数
+}
+
+//广播玩家选择的飘
+message AckBroadPiao
+{
+	optional int32 chariid = 1;			//椅子id
+	optional int32 UserPiao = 2;		//椅子id对应玩家选择的飘的倍数
+}
+
+//结算显示，杠牌信息
+message tagGangHu
+{
+	optional int32 Type = 1;		//0表示无，64表示点杠,2表示直杠，4表示弯杠，8表示暗杠，128表示被自摸, 16点炮，32炮胡, 256表示自摸（参考HUGANG枚举）
+	optional int32 Chairid = 2;		//引起杠、胡的椅子id，如果是暗杠则是自己的椅子id
+	optional int32 Card = 3;		//牌
+	optional int32 score = 4;		//输赢分数
+}
+
+message tagEndGangHu
+{
+	repeated tagGangHu GangHu = 1; 
+}
+
+//胡牌信息
+message tagHu
+{
+	optional int32 Hucard = 1;			//胡的牌
+	optional int32 pasHuchairid = 2;	//被胡玩家椅子id
+}
+
+//玩家胡牌信息
+message tagUserHuInfo
+{
+	optional int32 HuTotalscore = 1;	//胡牌输赢总分
+	repeated tagHu stHuinfo = 2;		//胡牌信息
+}
+
+//退杠信息
+message ReturnGangInfo
+{
+	repeated int32 State	= 1;	//退杠状态，1表示退杠，2表示被退杠，0为初始值
+	repeated int32 Card = 2;		//退杠的牌
+	repeated int32 Returngangscore = 3; //玩家退杠分数
+}
+
+//开始抓鸡、 奖码、
+//奖码，抓鸡，抓鸟 的牌
+message tagJiangma
+{
+	required int32 Num = 1;					//奖码、抓鸡牌的个数	
+	required int32 CardType = 2;			//奖码、抓鸡的类型，（奖码159，摸几奖几，抓鸡）
+	repeated int32 Card = 3; 				//奖码、抓鸡的牌
+	repeated int32 ZhongCardFlag = 4;		//中奖码的牌
+	optional int32 Chairid = 5;				//奖码
+}
+//补拍的信息
+message tagBuinfo
+{
+	required int32 Card = 1;			//要杠的牌
+	optional int32 state = 2;		    //杠类型	
+}
+message tagBuZhang
+{
+	repeated tagBuinfo bu = 1;
+}
+//定制麻将配置信息
+message AckCustomiedInfo
+{
+	required int32 gametype = 1;			//湖南地区，参照 HunanLocation
+	required int32 isHavePiao = 2;			//是否有飘
+	required int32 Jiangma = 3;				//是否奖码抓鸟， 0 表示没有奖码， 1 表示抓鸟，2 表示 159 奖码，3 表示摸几奖几
+	required int32 Laizi = 4;				//是否万能红中  0 表示没有癞子， 红中表示癞子
+	optional int32 piaoTime = 5;			//选择飘的时间
+	repeated int32 UserPiao = 6;			//各个玩家选择的飘
+	optional int32 IsPiaoyet = 7;			//是否已经选择飘	
+	repeated int32 JinZhiHuanPai = 8;		//听牌后禁止换牌
+	optional tagBuZhang bu = 9;
+}
+ 
+//2 结算，胡牌、杠牌信息宏定义，不需要，按之前的就可以；
+
+//麻将结算显示内容
+message tagHuNanGameEnd
+{
+	repeated FanInfo    faninfo = 1;       //番数信息
+	repeated int32      piaoNum = 2;
+}
+
+//另加番信息
+message AddFanInfo
+{
+    optional int32 AddType = 1;          //另加分类型(1只吃 2门清 3有眼 4箭牌刻 5 翻花对位 6风牌刻)
+	optional int32 AddNum = 2;           //分数
+}
+
+//番数信息
+message FanInfo
+{   
+    required int32 chairID = 1;				//椅子ID  	
+	required int32 SpecialType = 2;			//详细结算胡牌类型 1表示自摸，2表示点炮胡，3表示放炮,4 被自摸    
+	required int32 FanNum = 3;				//番数	
+	repeated AddFanInfo addfan = 4;   	    //另加番信息， 5天和 6地和 7抢杠胡 8杠上开花 9花上添花	
+}
+message tagBuZhangOpResult
+{
+	required int32 BuzhangOpType = 1;		//补张的操作  
+}
+

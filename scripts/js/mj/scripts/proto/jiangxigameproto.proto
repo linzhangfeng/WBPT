@@ -1,0 +1,24 @@
+package proto.game.jxmahjonggame;
+
+//游戏开始
+message AckGameStart
+{
+	required int32 bankerid = 1; 		//庄家椅子id
+	optional int32 quanfeng  = 2;        //当前圈风
+}
+
+//番数信息
+message FanInfo
+{   
+    optional int32 chairID = 1;           //椅子ID  
+	optional int32 EndType = 2;            //0表示无，1表示自摸，2表示点炮胡，3表示放炮,4 被自摸
+	optional int32 SpecialType = 3;        //详细结算胡牌类型 1表示自摸，2表示点炮胡，3表示放炮,4 被自摸
+    optional int32 FanType = 4;          //番型
+	optional int32 FanNum = 5;           //番数 
+}
+//海南麻将结算信息
+message jxmjGameEndInfo
+{   
+	repeated FanInfo    faninfo = 1;       //番数信息
+	repeated int32      HuScore  = 2;      //个玩家胡牌输赢分数（不是总分数 ）
+}

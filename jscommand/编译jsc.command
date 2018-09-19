@@ -1,0 +1,1 @@
+cocos jscompile -s scripts/ -d Resources/

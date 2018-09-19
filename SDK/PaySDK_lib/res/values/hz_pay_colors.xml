@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="hz_pay_7c7c7c">#7c7c7c</color>
+	<color name="hz_pay_32353c">#32353c</color>
+	<color name="hz_pay_white">#ffffff</color>
+	<color name="hz_pay_black">#000000</color>
+	<color name="hz_pay_0082cb">#0082cb</color>
+	<color name="hz_pay_4d5873">#4d5873</color>
+	<color name="hz_pay_77bd38">#77bd38</color>
+	<color name="hz_pay_gray">#969696</color>
+
+	<color name="hz_pay_969696">#969696</color>
+	<color name="hz_pay_f2f2f2">#f2f2f2</color>
+	<color name="hz_pay_e6e6e6">#e6e6e6</color>
+	<color name="hz_pay_646464">#646464</color>
+
+	<color name="hz_pay_f3f3f3">#f3f3f3</color>
+
+	<color name="hz_pay_blue">#0082cb</color>
+</resources>

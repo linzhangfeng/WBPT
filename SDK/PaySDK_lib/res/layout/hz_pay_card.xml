@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="@dimen/hz_pay_dimen_798"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/hz_pay_dimen_37"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/hz_pay_dimen_100"
+			android:background="@drawable/hz_pay_top"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/hz_pay_dimen_36"
+				android:text="@string/hz_pay_card_number_text"
+				android:textColor="@color/hz_pay_4d5873"
+				android:textSize="@dimen/hz_pay_dimen_30"/>
+
+			<EditText
+				android:id="@+id/hz_pay_card_number_et"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/hz_pay_dimen_48"
+				android:layout_marginRight="@dimen/hz_pay_dimen_20"
+				android:background="@null"
+				android:hint="@string/hz_pay_card_number_hint"
+				android:singleLine="true"
+				android:textColor="@color/hz_pay_black"
+				android:textColorHint="@color/hz_pay_7c7c7c"
+				android:textSize="@dimen/hz_pay_dimen_30"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/hz_pay_dimen_100"
+			android:background="@drawable/hz_pay_middle"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/hz_pay_dimen_36"
+				android:text="@string/hz_pay_card_password_text"
+				android:textColor="@color/hz_pay_4d5873"
+				android:textSize="@dimen/hz_pay_dimen_30"/>
+
+			<EditText
+				android:id="@+id/hz_pay_card_password_et"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/hz_pay_dimen_48"
+				android:layout_marginRight="@dimen/hz_pay_dimen_20"
+				android:background="@null"
+				android:hint="@string/hz_pay_card_password_hint"
+				android:singleLine="true"
+				android:textColor="@color/hz_pay_black"
+				android:textColorHint="@color/hz_pay_7c7c7c"
+				android:textSize="@dimen/hz_pay_dimen_30"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/hz_pay_dimen_100"
+			android:background="@drawable/hz_pay_middle"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/hz_pay_dimen_36"
+				android:text="@string/hz_pay_card_money_text"
+				android:textColor="@color/hz_pay_4d5873"
+				android:textSize="@dimen/hz_pay_dimen_30"/>
+
+			<TextView
+				android:id="@+id/hz_pay_card_money_tv"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/hz_pay_dimen_48"
+				android:layout_marginRight="@dimen/hz_pay_dimen_20"
+				android:singleLine="true"
+				android:text="￥60"
+				android:textColor="@color/hz_pay_0082cb"
+				android:textSize="@dimen/hz_pay_dimen_36"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/hz_pay_choice_denomination_btn"
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/hz_pay_dimen_100"
+			android:background="@drawable/hz_pay_bottom_select"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/hz_pay_dimen_36"
+				android:text="@string/hz_pay_card_denomination_text"
+				android:textColor="@color/hz_pay_4d5873"
+				android:textSize="@dimen/hz_pay_dimen_30"/>
+
+			<TextView
+				android:id="@+id/hz_pay_card_denomination_tv"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/hz_pay_dimen_48"
+				android:layout_marginRight="@dimen/hz_pay_dimen_20"
+				android:layout_weight="1"
+				android:hint="@string/hz_pay_card_denomination_choice_text"
+				android:textColor="@color/hz_pay_black"
+				android:textColorHint="@color/hz_pay_7c7c7c"
+				android:textSize="@dimen/hz_pay_dimen_30"/>
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="@dimen/hz_pay_dimen_48"
+				android:background="@drawable/hz_pay_view_arrow"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/hz_pay_dimen_42"
+			android:orientation="horizontal">
+
+			<Button
+				android:id="@+id/hz_pay_sure_btn"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="@dimen/hz_pay_dimen_21"
+				android:layout_weight="1"
+				android:background="@drawable/hz_pay_sure_select"
+				android:gravity="center"
+				android:text="@string/hz_pay_sure_text"
+				android:textColor="@color/hz_pay_white"
+				android:textSize="@dimen/hz_pay_dimen_36"/>
+
+			<Button
+				android:id="@+id/hz_pay_cancel_btn"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/hz_pay_dimen_21"
+				android:layout_weight="1"
+				android:background="@drawable/hz_pay_cancel_select"
+				android:gravity="center"
+				android:text="@string/hz_pay_cancel_text"
+				android:textColor="@color/hz_pay_969696"
+				android:textSize="@dimen/hz_pay_dimen_36"/>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

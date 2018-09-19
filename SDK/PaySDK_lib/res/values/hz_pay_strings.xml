@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hz_pay_title_text">汇智游戏支付中心</string>
+	<string name="hz_pay_recharge_details_text">充值信息</string>
+	<string name="hz_pay_choice_text">请选择支付方式</string>
+	<string name="hz_pay_account_text">帐号：</string>
+	<string name="hz_pay_goods_text">商品：</string>
+	<string name="hz_pay_money_text">金额：</string>
+	<string name="hz_pay_money_tips">￥%1$s</string>
+	<string name="hz_pay_sale_tips">（%1$s）</string>
+	<string name="hz_pay_help_text">充值帮助</string>
+
+	<string name="hz_pay_help_1">1.</string>
+	<string name="hz_pay_help_2">2.</string>
+	<string name="hz_pay_help_3">3.</string>
+
+	<string name="hz_pay_help_tips1">一般1-10分钟即可到账，安全方便</string>
+	<string name="hz_pay_help_tips2">银联卡充值支持大部分信用卡,以及部分借记卡</string>
+	<string name="hz_pay_help_tips3">客服热线：</string>
+	<string name="hz_pay_help_tips4">客服QQ：</string>
+	<string name="hz_pay_help_tips5">4008676979</string>
+	<string name="hz_pay_help_tips6">800082647</string>
+
+	<string name="hz_pay_sure_text">确定</string>
+	<string name="hz_pay_cancel_text">取消</string>
+
+	<string name="hz_pay_card_number_text">充值卡号：</string>
+	<string name="hz_pay_card_password_text">充值卡密：</string>
+	<string name="hz_pay_card_money_text">充值金额：</string>
+	<string name="hz_pay_card_denomination_text">充值卡面额：</string>
+	<string name="hz_pay_card_password_hint">请输入充值卡密码</string>
+	<string name="hz_pay_card_number_hint">请输入充值卡序列号</string>
+	<string name="hz_pay_card_denomination_choice_text">请选择充值卡面额</string>
+
+	<string name="hz_pay_card_choice_text">请选择面值</string>
+
+	<string name="hz_pay_loading_text">正在努力加载中...</string>
+
+	<string name="hz_pay_fail_tip">充值失败</string>
+
+	<string name="hz_pay_success_tip">支付成功</string>
+	<string name="hz_pay_bind_tip">支付成功！您是游客用户，为避免丢失或遗忘帐号，请尽快在我的用户中心完成帐号修改或绑定</string>
+	<string name="hz_pay_bind_now">立即绑定</string>
+</resources>

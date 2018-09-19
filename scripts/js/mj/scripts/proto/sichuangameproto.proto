@@ -1,0 +1,157 @@
+
+//package com.ihuizhi.network.mahjong.protobuf;
+
+
+
+package proto.game.scmj;
+
+
+//结算，胡牌、杠牌信息宏定义
+enum HUGANG
+{
+	HUGANG_ZHIGANG = 2;				//直杠
+	HUGANG_WANGANG = 4;				//弯杠
+	HUGANG_ANGANG = 8;				//暗杠
+	HUGANG_DIANPAO = 16;			//点炮
+	HUGANG_PAOHU = 32;				//炮胡
+	HUGANG_DIANGANG = 64;			//点杠
+	HUGANG_BEIZIMO = 128;			//被自摸
+	HUGANG_ZIMO = 256;				//自摸
+}
+
+//听牌类型
+enum LISTEN_TYPE
+{
+	LISTEN_CARD_NOMAL = 0;					//常规听牌处理
+	LISTEN_CARD_BAOTING = 1;				//报听
+	LISTEN_CARD_BAIPAI	= 2;				//摆牌
+	LISTEN_CARD_FIRST_BAOPAI = 3;			//首张报牌
+}
+
+//客户端上传结构体
+
+//选择飘的数
+message ReqChoosePiao
+{
+	optional int32 PiaoNum = 1;			//飘的大小，0表示不飘
+}
+
+//玩家上传的听牌类型
+message ReqChooseListen
+{
+	optional int32 ListenType = 1;		//参考枚举LISTEN_TYPE
+}
+
+//服务端下发结构体
+
+//开始选择飘
+message AckStartPiao
+{
+	repeated int32 piaoNum = 1;			//飘的倍数
+}
+
+//广播玩家选择的飘
+message AckBroadPiao
+{
+	optional int32 chariid = 1;			//椅子id
+	optional int32 UserPiao = 2;		//椅子id对应玩家选择的飘的倍数
+}
+
+//广播玩家选择的听牌类型（打出牌后再广播）
+message AckBroadListentype
+{
+	optional int32 chariid = 1;					//选择听牌的椅子id
+	optional int32 ListenType = 2;				//椅子id对应玩家选择的听牌类型
+	repeated int32 ChangeableCards = 3;			//玩家手牌
+}
+
+//结算显示，杠牌信息
+message tagGangHu
+{
+	optional int32 Type = 1;		//0表示无，64表示点杠,2表示直杠，4表示弯杠，8表示暗杠，128表示被自摸, 16点炮，32炮胡, 256表示自摸（参考HUGANG枚举）
+	optional int32 Chairid = 2;		//引起杠、胡的椅子id，如果是暗杠则是自己的椅子id
+	optional int32 Card = 3;		//牌
+	optional int32 score = 4;		//输赢分数
+}
+
+message tagEndGangHu
+{
+	repeated tagGangHu GangHu = 1; 
+}
+
+//胡牌信息
+message tagHu
+{
+	optional int32 Hucard = 1;			//胡的牌
+	optional int32 pasHuchairid = 2;	//被胡玩家椅子id
+}
+
+//玩家胡牌信息
+message tagUserHuInfo
+{
+	optional int32 HuTotalscore = 1;	//胡牌输赢总分
+	repeated tagHu stHuinfo = 2;		//胡牌信息
+}
+
+message tagHuazhudajiao
+{
+	optional int32 ishuazhudajiao = 1;	//0表示无，1表示花猪赔付，2表示大叫赔付，3表示被花猪赔付，4表示被大叫赔付，5表示同时有被花猪、大叫赔付
+	optional int32 Huazhuscore = 2;		//花猪输赢分
+	optional int32 Dajiaoscore = 3;		//大叫输赢分
+}
+
+//退杠信息
+message ReturnGangInfo
+{
+	repeated int32 State	= 1;	//退杠状态，1表示退杠，2表示被退杠，0为初始值
+	repeated int32 Card = 2;		//退杠的牌
+	repeated int32 Returngangscore = 3; //玩家退杠分数
+}
+
+//四川麻将结算显示内容
+message tagScGameEnd
+{
+	repeated tagUserHuInfo stUserHu = 1;		//四个玩家胡牌信息（数组下表为椅子id，下面字段同理）
+	repeated tagEndGangHu GangInfo = 2;			//四个玩家杠牌信息
+	repeated ReturnGangInfo Returngangscore = 3; //四个玩家退杠信息
+	repeated tagHuazhudajiao Huazhudajiao = 4;	//四个玩家查花猪大叫信息
+	repeated int32 piaoNum = 5;					//各个玩家选择的飘
+	repeated int32 bIsWinScoreFengding = 6;		//各个玩家是否触发金额封顶，0表示没有触发（除了血流成河不显示，其他都显示）
+	repeated int32 ListenDouble = 7;			//听牌加倍倍数
+	repeated int32 UserHuRank = 8;				//每个玩家对应的胡牌顺序（数组下标表示椅子id），0表示没有胡牌，1表示第一个胡牌，3表示第三个胡牌
+	repeated int32 bHuFanFengding = 9;			//各个玩家是否触发胡牌最大番数封顶，0表示没有触发（除了血流成河不显示，其他都显示）
+
+};
+
+//听牌操作信息
+message tagOpListenInfo
+{
+	optional int32 isHaveOpListen = 1;		//是否选择听牌操作
+	optional int32 ChairID = 2;				//已经操作听牌的椅子id
+	repeated int32 ChangeableCards = 3;		//玩家手牌
+}
+
+//定制麻将配置信息
+message AckCustomiedInfo
+{
+	optional int32 gametype = 1;			//0表示血流成河，1表示血战到底
+	optional int32 isYipaodouxiang = 2;		//是否可以一炮多响，0表示不可以，非0表示可以
+	optional int32 isQiangganghu = 3;		//是否可以抢杠胡，0表示不可以，非0表示可以
+	optional int32 isChangeCard = 4;		//是否可以换牌，0表示不可以，非0表示可以
+	optional int32 isCheckhuazhudajiao = 5;	//流局是否查花猪大叫，0表示不查，非0表示查
+	optional int32 isHavePiao = 6;			//是否有飘
+	optional int32 piaoTime = 7;			//选择飘的时间
+	repeated int32 UserPiao = 8;			//各个玩家选择的飘
+	optional int32 IsPiaoyet = 9;			//是否已经选择飘
+	optional int32 RoomType = 10;	 		//房间类型，0表示普通房间，1表示三人两色房间
+	optional int32 ListenType = 11;			//听牌类型，0表示常规听牌，1表示报叫，2表示躺牌，3表示首张报牌(参考枚举LISTEN_TYPE)
+	repeated tagOpListenInfo stOpListen = 12;//选择听牌操作的信息（断线重连恢复躺牌、报听的效果）		
+    optional int32 CurJoker = 13;        	//当前癞子	
+}
+
+
+
+
+
+
+

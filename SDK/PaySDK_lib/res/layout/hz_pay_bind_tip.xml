@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:layout_width="@dimen/hz_pay_dimen_620"
+		android:layout_height="@dimen/hz_pay_dimen_436"
+		android:layout_gravity="center"
+		android:background="@drawable/hz_pay_bg"
+		android:gravity="center_horizontal"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/hz_pay_dimen_50"
+			android:text="@string/hz_pay_success_tip"
+			android:textColor="@color/hz_pay_blue"
+			android:textSize="@dimen/hz_pay_dimen_32"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/hz_pay_dimen_36"
+			android:layout_marginRight="@dimen/hz_pay_dimen_36"
+			android:layout_marginTop="@dimen/hz_pay_dimen_27"
+			android:lineSpacingExtra="@dimen/hz_pay_dimen_10"
+			android:text="@string/hz_pay_bind_tip"
+			android:textColor="@color/hz_pay_white"
+			android:textSize="@dimen/hz_pay_dimen_28"/>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/hz_pay_dimen_36"
+			android:layout_marginRight="@dimen/hz_pay_dimen_36"
+			android:layout_marginTop="@dimen/hz_pay_dimen_50"
+			android:orientation="horizontal">
+
+			<Button
+				android:id="@+id/hz_pay_sure_btn"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="@dimen/hz_pay_dimen_17"
+				android:layout_weight="1"
+				android:background="@drawable/hz_pay_blue_select"
+				android:gravity="center"
+				android:text="@string/hz_pay_bind_now"
+				android:textColor="@color/hz_pay_white"
+				android:textSize="@dimen/hz_pay_dimen_36"/>
+
+			<Button
+				android:id="@+id/hz_pay_back_btn"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/hz_pay_dimen_17"
+				android:layout_weight="1"
+				android:background="@drawable/hz_pay_white_select"
+				android:gravity="center"
+				android:text="@string/hz_pay_cancel_text"
+				android:textColor="@color/hz_pay_black"
+				android:textSize="@dimen/hz_pay_dimen_36"/>
+		</LinearLayout>
+	</LinearLayout>
+</FrameLayout>

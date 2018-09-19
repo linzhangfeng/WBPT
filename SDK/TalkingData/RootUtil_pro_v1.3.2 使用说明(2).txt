@@ -1,0 +1,40 @@
+使用方法：导入RootUtil_pro.jar
+
+在manifest中接入如下权限：
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.SENSOR_INFO" />
+<uses-permission android:name="android.permission.SENSOR_ENABLE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+接口：
+
+public class com.huizhi.util.root.RootUtil {
+
+	/**
+	 * 初始化
+	 * 
+	 * @param ctx	context
+	 * @param cID	渠道号
+	 * @param uID	用户id
+	 * @param aID	app id
+	 * @param host	上报服务器地址
+	 */
+    public static final void init(android.content.Context ctx, java.lang.String cID, java.lang.String uID, java.lang.String aID, java.lang.String host);
+
+	/**
+	 * 获取设备UID
+	 */
+    public static final String getUID();
+
+	/**
+	 * 判断设备是否为模拟器，必须在非UI线程中调用
+	 */
+    public static final boolean isEmulator_synch();
+
+	/**
+	 * 判断是否已经root。该方法在某些机型上会判断错误，只做为一个参考指标
+	 */
+    public static final boolean isRoot();
+}

@@ -1,0 +1,1827 @@
+{
+  "ID": "f76a415e-99b5-4941-87a0-813073b3bb33",
+  "Version": "2.3.4",
+  "Name": "ddzBigface",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 49,
+        "Children": [
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 0,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 89,
+            "ActionTag": 1301961179,
+            "Size": {
+              "X": 1280.0,
+              "Y": 720.0
+            },
+            "Name": "mask",
+            "ctype": "PanelObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "public/icon_bg_012.png",
+              "Plist": "img/dialog.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.1195,
+              "ScaleY": 0.5049
+            },
+            "Position": {
+              "X": 40.0,
+              "Y": 520.0
+            },
+            "Scale": {
+              "ScaleX": 0.7091,
+              "ScaleY": 0.75
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0313,
+              "Y": 0.7222
+            },
+            "PreSize": {
+              "X": 0.2273,
+              "Y": 0.5653
+            },
+            "LeftMargin": 5.2122,
+            "RightMargin": 983.7878,
+            "TopMargin": -1.4908,
+            "BottomMargin": 314.4908,
+            "Tag": 50,
+            "Children": [
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_104.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_004.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9Width": 76,
+                "Scale9Height": 77,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 50.0,
+                  "Y": 348.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1718,
+                  "Y": 0.855
+                },
+                "PreSize": {
+                  "X": 0.2612,
+                  "Y": 0.1892
+                },
+                "LeftMargin": 12.0,
+                "RightMargin": 203.0,
+                "TopMargin": 20.5,
+                "BottomMargin": 309.5,
+                "Tag": 51,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "public/flower/flower1.png",
+                      "Plist": "img/bigface.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 38.0,
+                      "Y": 38.5
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.8816,
+                      "Y": 1.013
+                    },
+                    "LeftMargin": 4.5,
+                    "RightMargin": 4.5,
+                    "TopMargin": -0.5,
+                    "BottomMargin": -0.5,
+                    "Tag": 52,
+                    "ActionTag": -573300297,
+                    "Size": {
+                      "X": 67.0,
+                      "Y": 78.0
+                    },
+                    "Name": "public_bomb_bomb1_2",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": 1690584353,
+                "Size": {
+                  "X": 76.0,
+                  "Y": 77.0
+                },
+                "Name": "btn1",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_104.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_004.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9Width": 76,
+                "Scale9Height": 77,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 135.0,
+                  "Y": 328.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4639,
+                  "Y": 0.8059
+                },
+                "PreSize": {
+                  "X": 0.2612,
+                  "Y": 0.1892
+                },
+                "LeftMargin": 97.0,
+                "RightMargin": 118.0,
+                "TopMargin": 40.5,
+                "BottomMargin": 289.5,
+                "Tag": 53,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "public/cheers/cheers1.png",
+                      "Plist": "img/bigface.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 38.0,
+                      "Y": 38.5
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.8026,
+                      "Y": 0.8961
+                    },
+                    "LeftMargin": 7.5,
+                    "RightMargin": 7.5,
+                    "TopMargin": 4.0,
+                    "BottomMargin": 4.0,
+                    "Tag": 54,
+                    "ActionTag": 1288181047,
+                    "Size": {
+                      "X": 61.0,
+                      "Y": 69.0
+                    },
+                    "Name": "public_bomb_bomb1_2",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": -637459528,
+                "Size": {
+                  "X": 76.0,
+                  "Y": 77.0
+                },
+                "Name": "btn2",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_104.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_004.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9Width": 76,
+                "Scale9Height": 77,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 205.0,
+                  "Y": 278.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7045,
+                  "Y": 0.683
+                },
+                "PreSize": {
+                  "X": 0.2612,
+                  "Y": 0.1892
+                },
+                "LeftMargin": 167.0,
+                "RightMargin": 48.0,
+                "TopMargin": 90.5,
+                "BottomMargin": 239.5,
+                "Tag": 55,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "public/kiss/kiss1.png",
+                      "Plist": "img/bigface.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 38.0,
+                      "Y": 38.5
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 1.0395,
+                      "Y": 0.7922
+                    },
+                    "LeftMargin": -1.5,
+                    "RightMargin": -1.5,
+                    "TopMargin": 8.0,
+                    "BottomMargin": 8.0,
+                    "Tag": 56,
+                    "ActionTag": 1034204834,
+                    "Size": {
+                      "X": 79.0,
+                      "Y": 61.0
+                    },
+                    "Name": "public_bomb_bomb1_2",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": 910765840,
+                "Size": {
+                  "X": 76.0,
+                  "Y": 77.0
+                },
+                "Name": "btn3",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_104.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_004.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9Width": 76,
+                "Scale9Height": 77,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 230.0,
+                  "Y": 202.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7904,
+                  "Y": 0.4963
+                },
+                "PreSize": {
+                  "X": 0.2612,
+                  "Y": 0.1892
+                },
+                "LeftMargin": 192.0,
+                "RightMargin": 23.0,
+                "TopMargin": 166.5,
+                "BottomMargin": 163.5,
+                "Tag": 65,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "public/eggs/egg1.png",
+                      "Plist": "img/bigface.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 38.0,
+                      "Y": 38.5
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.75,
+                      "Y": 0.961
+                    },
+                    "LeftMargin": 9.5,
+                    "RightMargin": 9.5,
+                    "TopMargin": 1.5,
+                    "BottomMargin": 1.5,
+                    "Tag": 66,
+                    "ActionTag": -1920239514,
+                    "Size": {
+                      "X": 57.0,
+                      "Y": 74.0
+                    },
+                    "Name": "public_bomb_bomb1_2",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": 1004225273,
+                "Size": {
+                  "X": 76.0,
+                  "Y": 77.0
+                },
+                "Name": "btn4",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_104.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_004.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9Width": 76,
+                "Scale9Height": 77,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 205.0,
+                  "Y": 120.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7045,
+                  "Y": 0.2948
+                },
+                "PreSize": {
+                  "X": 0.2612,
+                  "Y": 0.1892
+                },
+                "LeftMargin": 167.0,
+                "RightMargin": 48.0,
+                "TopMargin": 248.5,
+                "BottomMargin": 81.5,
+                "Tag": 67,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "public/shoe/shoe1.png",
+                      "Plist": "img/bigface.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 38.0,
+                      "Y": 38.5
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 1.0132,
+                      "Y": 0.8831
+                    },
+                    "LeftMargin": -0.5,
+                    "RightMargin": -0.5,
+                    "TopMargin": 4.5,
+                    "BottomMargin": 4.5,
+                    "Tag": 68,
+                    "ActionTag": 525367925,
+                    "Size": {
+                      "X": 77.0,
+                      "Y": 68.0
+                    },
+                    "Name": "public_bomb_bomb1_2",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": 752510578,
+                "Size": {
+                  "X": 76.0,
+                  "Y": 77.0
+                },
+                "Name": "btn5",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_104.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_004.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9Width": 76,
+                "Scale9Height": 77,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 132.0,
+                  "Y": 72.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4536,
+                  "Y": 0.1769
+                },
+                "PreSize": {
+                  "X": 0.2612,
+                  "Y": 0.1892
+                },
+                "LeftMargin": 94.0,
+                "RightMargin": 121.0,
+                "TopMargin": 296.5,
+                "BottomMargin": 33.5,
+                "Tag": 69,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "public/bomb/bomb1.png",
+                      "Plist": "img/bigface.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 38.0,
+                      "Y": 38.5
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 1.2237,
+                      "Y": 0.9351
+                    },
+                    "LeftMargin": -8.5,
+                    "RightMargin": -8.5,
+                    "TopMargin": 2.5,
+                    "BottomMargin": 2.5,
+                    "Tag": 70,
+                    "ActionTag": 1244499911,
+                    "Size": {
+                      "X": 93.0,
+                      "Y": 72.0
+                    },
+                    "Name": "public_bomb_bomb1_2",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": 1683490954,
+                "Size": {
+                  "X": 76.0,
+                  "Y": 77.0
+                },
+                "Name": "btn6",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_104.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_004.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9Width": 76,
+                "Scale9Height": 77,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 50.0,
+                  "Y": 56.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1718,
+                  "Y": 0.1376
+                },
+                "PreSize": {
+                  "X": 0.2612,
+                  "Y": 0.1892
+                },
+                "LeftMargin": 12.0,
+                "RightMargin": 203.0,
+                "TopMargin": 312.5,
+                "BottomMargin": 17.5,
+                "Tag": 71,
+                "Children": [
+                  {
+                    "FontSize": 24,
+                    "LabelText": "玩家\n列表",
+                    "HorizontalAlignmentType": "HT_Center",
+                    "VerticalAlignmentType": "VT_Center",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 38.0,
+                      "Y": 38.5
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.6316,
+                      "Y": 0.7273
+                    },
+                    "LeftMargin": 14.0,
+                    "RightMargin": 14.0,
+                    "TopMargin": 10.5,
+                    "BottomMargin": 10.5,
+                    "Tag": 73,
+                    "ActionTag": 98589789,
+                    "Size": {
+                      "X": 48.0,
+                      "Y": 56.0
+                    },
+                    "Name": "Text_1",
+                    "ctype": "TextObjectData"
+                  }
+                ],
+                "ActionTag": 1301245254,
+                "Size": {
+                  "X": 76.0,
+                  "Y": 77.0
+                },
+                "Name": "btn7",
+                "ctype": "ButtonObjectData"
+              }
+            ],
+            "ActionTag": -9904576,
+            "Size": {
+              "X": 291.0,
+              "Y": 407.0
+            },
+            "Name": "bg2",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "public/icon_bg_013.png",
+              "Plist": "img/dialog.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.85,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 1240.0,
+              "Y": 520.0
+            },
+            "Scale": {
+              "ScaleX": 0.75,
+              "ScaleY": 0.75
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.9688,
+              "Y": 0.7222
+            },
+            "PreSize": {
+              "X": 0.2273,
+              "Y": 0.5653
+            },
+            "LeftMargin": 992.65,
+            "RightMargin": -3.65,
+            "TopMargin": -3.5,
+            "BottomMargin": 316.5,
+            "Tag": 74,
+            "Children": [
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_104.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_004.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9Width": 76,
+                "Scale9Height": 77,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 230.0,
+                  "Y": 348.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7904,
+                  "Y": 0.855
+                },
+                "PreSize": {
+                  "X": 0.2612,
+                  "Y": 0.1892
+                },
+                "LeftMargin": 192.0,
+                "RightMargin": 23.0,
+                "TopMargin": 20.5,
+                "BottomMargin": 309.5,
+                "Tag": 75,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "public/flower/flower1.png",
+                      "Plist": "img/bigface.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 38.0,
+                      "Y": 38.5
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.8816,
+                      "Y": 1.013
+                    },
+                    "LeftMargin": 4.5,
+                    "RightMargin": 4.5,
+                    "TopMargin": -0.5,
+                    "BottomMargin": -0.5,
+                    "Tag": 76,
+                    "ActionTag": -1353775173,
+                    "Size": {
+                      "X": 67.0,
+                      "Y": 78.0
+                    },
+                    "Name": "public_bomb_bomb1_2",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": 901589726,
+                "Size": {
+                  "X": 76.0,
+                  "Y": 77.0
+                },
+                "Name": "btn1",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_104.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_004.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9Width": 76,
+                "Scale9Height": 77,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 150.0,
+                  "Y": 328.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5155,
+                  "Y": 0.8059
+                },
+                "PreSize": {
+                  "X": 0.2612,
+                  "Y": 0.1892
+                },
+                "LeftMargin": 112.0,
+                "RightMargin": 103.0,
+                "TopMargin": 40.5,
+                "BottomMargin": 289.5,
+                "Tag": 77,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "public/cheers/cheers1.png",
+                      "Plist": "img/bigface.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 38.0,
+                      "Y": 38.5
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.8026,
+                      "Y": 0.8961
+                    },
+                    "LeftMargin": 7.5,
+                    "RightMargin": 7.5,
+                    "TopMargin": 4.0,
+                    "BottomMargin": 4.0,
+                    "Tag": 78,
+                    "ActionTag": 1997577746,
+                    "Size": {
+                      "X": 61.0,
+                      "Y": 69.0
+                    },
+                    "Name": "public_bomb_bomb1_2",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": 313355616,
+                "Size": {
+                  "X": 76.0,
+                  "Y": 77.0
+                },
+                "Name": "btn2",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_104.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_004.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9Width": 76,
+                "Scale9Height": 77,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 80.0,
+                  "Y": 278.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2749,
+                  "Y": 0.683
+                },
+                "PreSize": {
+                  "X": 0.2612,
+                  "Y": 0.1892
+                },
+                "LeftMargin": 42.0,
+                "RightMargin": 173.0,
+                "TopMargin": 90.5,
+                "BottomMargin": 239.5,
+                "Tag": 79,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "public/kiss/kiss1.png",
+                      "Plist": "img/bigface.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 38.0,
+                      "Y": 38.5
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 1.0395,
+                      "Y": 0.7922
+                    },
+                    "LeftMargin": -1.5,
+                    "RightMargin": -1.5,
+                    "TopMargin": 8.0,
+                    "BottomMargin": 8.0,
+                    "Tag": 80,
+                    "ActionTag": -382045439,
+                    "Size": {
+                      "X": 79.0,
+                      "Y": 61.0
+                    },
+                    "Name": "public_bomb_bomb1_2",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": 350877646,
+                "Size": {
+                  "X": 76.0,
+                  "Y": 77.0
+                },
+                "Name": "btn3",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_104.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_004.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9Width": 76,
+                "Scale9Height": 77,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 60.0,
+                  "Y": 202.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2062,
+                  "Y": 0.4963
+                },
+                "PreSize": {
+                  "X": 0.2612,
+                  "Y": 0.1892
+                },
+                "LeftMargin": 22.0,
+                "RightMargin": 193.0,
+                "TopMargin": 166.5,
+                "BottomMargin": 163.5,
+                "Tag": 81,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "public/eggs/egg1.png",
+                      "Plist": "img/bigface.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 38.0,
+                      "Y": 38.5
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.75,
+                      "Y": 0.961
+                    },
+                    "LeftMargin": 9.5,
+                    "RightMargin": 9.5,
+                    "TopMargin": 1.5,
+                    "BottomMargin": 1.5,
+                    "Tag": 82,
+                    "ActionTag": 1354201431,
+                    "Size": {
+                      "X": 57.0,
+                      "Y": 74.0
+                    },
+                    "Name": "public_bomb_bomb1_2",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": -207665137,
+                "Size": {
+                  "X": 76.0,
+                  "Y": 77.0
+                },
+                "Name": "btn4",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_104.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_004.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9Width": 76,
+                "Scale9Height": 77,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 80.0,
+                  "Y": 120.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2749,
+                  "Y": 0.2948
+                },
+                "PreSize": {
+                  "X": 0.2612,
+                  "Y": 0.1892
+                },
+                "LeftMargin": 42.0,
+                "RightMargin": 173.0,
+                "TopMargin": 248.5,
+                "BottomMargin": 81.5,
+                "Tag": 83,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "public/shoe/shoe1.png",
+                      "Plist": "img/bigface.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 38.0,
+                      "Y": 38.5
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 1.0132,
+                      "Y": 0.8831
+                    },
+                    "LeftMargin": -0.5,
+                    "RightMargin": -0.5,
+                    "TopMargin": 4.5,
+                    "BottomMargin": 4.5,
+                    "Tag": 84,
+                    "ActionTag": -1518406261,
+                    "Size": {
+                      "X": 77.0,
+                      "Y": 68.0
+                    },
+                    "Name": "public_bomb_bomb1_2",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": 1074571979,
+                "Size": {
+                  "X": 76.0,
+                  "Y": 77.0
+                },
+                "Name": "btn5",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_104.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_004.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9Width": 76,
+                "Scale9Height": 77,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 150.0,
+                  "Y": 72.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5155,
+                  "Y": 0.1769
+                },
+                "PreSize": {
+                  "X": 0.2612,
+                  "Y": 0.1892
+                },
+                "LeftMargin": 112.0,
+                "RightMargin": 103.0,
+                "TopMargin": 296.5,
+                "BottomMargin": 33.5,
+                "Tag": 85,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "public/bomb/bomb1.png",
+                      "Plist": "img/bigface.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 38.0,
+                      "Y": 38.5
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 1.2237,
+                      "Y": 0.9351
+                    },
+                    "LeftMargin": -8.5,
+                    "RightMargin": -8.5,
+                    "TopMargin": 2.5,
+                    "BottomMargin": 2.5,
+                    "Tag": 86,
+                    "ActionTag": 1815333663,
+                    "Size": {
+                      "X": 93.0,
+                      "Y": 72.0
+                    },
+                    "Name": "public_bomb_bomb1_2",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": 565483648,
+                "Size": {
+                  "X": 76.0,
+                  "Y": 77.0
+                },
+                "Name": "btn6",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_104.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "public/btn_004.png",
+                  "Plist": "img/dialog.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9Width": 76,
+                "Scale9Height": 77,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 230.0,
+                  "Y": 56.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7904,
+                  "Y": 0.1376
+                },
+                "PreSize": {
+                  "X": 0.2612,
+                  "Y": 0.1892
+                },
+                "LeftMargin": 192.0,
+                "RightMargin": 23.0,
+                "TopMargin": 312.5,
+                "BottomMargin": 17.5,
+                "Tag": 87,
+                "Children": [
+                  {
+                    "FontSize": 24,
+                    "LabelText": "玩家\n列表",
+                    "HorizontalAlignmentType": "HT_Center",
+                    "VerticalAlignmentType": "VT_Center",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 38.0,
+                      "Y": 38.5
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.6316,
+                      "Y": 0.7273
+                    },
+                    "LeftMargin": 14.0,
+                    "RightMargin": 14.0,
+                    "TopMargin": 10.5,
+                    "BottomMargin": 10.5,
+                    "Tag": 88,
+                    "ActionTag": 1542812358,
+                    "Size": {
+                      "X": 48.0,
+                      "Y": 56.0
+                    },
+                    "Name": "Text_1",
+                    "ctype": "TextObjectData"
+                  }
+                ],
+                "ActionTag": 1066723569,
+                "Size": {
+                  "X": 76.0,
+                  "Y": 77.0
+                },
+                "Name": "btn7",
+                "ctype": "ButtonObjectData"
+              }
+            ],
+            "ActionTag": -1108918948,
+            "Size": {
+              "X": 291.0,
+              "Y": 407.0
+            },
+            "Name": "bg1",
+            "ctype": "SpriteObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1280.0,
+          "Y": 720.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "img/bigface.plist",
+        "img/bigface.png",
+        "img/dialog.plist",
+        "img/dialog.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

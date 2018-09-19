@@ -1,0 +1,49 @@
+
+
+package proto.game.wuhanmj;
+
+
+//武汉麻将场景信息
+message wuhanGameScene
+{
+	optional int32	gametype = 3;				//游戏玩法，0表示开口翻，1表示口口翻
+	optional AckLaiziCard	stLaizi	= 1;		//游戏开始需要显示的癞子、癞子皮等信息
+	optional int32	minHuCount = 2;				//起胡点数
+}
+
+//癞子牌
+message AckLaiziCard
+{
+	optional int32	card = 1;					//生成癞子的牌，该牌加1就等于癞子牌,该牌减1就等于癞子皮牌
+	optional int32  laizicard = 2;				//癞子牌
+	optional int32	laizipicard = 3;			//癞子皮牌
+}
+
+//结算界面杠牌类型
+enum END_INFO
+{
+	KAI_KOU = 1;								//开口
+	HONGZHONGGANG = 2;							//红中杠
+	FACAIGANG = 3;								//发财杠
+	LAIZIGANG = 4;								//癞子杠
+	LAIZIPIGANG = 5;							//癞子皮杠
+	
+}
+
+//结算界面杠牌信息
+message tagWuhanEndInfo
+{
+	optional int32	Type = 1;					//参考END_INFO
+	optional int32	Doublenum = 2;				//倍数
+}
+
+//游戏结算
+message AckwuhanGameEnd
+{
+	repeated int32	score = 1;					//四个玩家的分数
+	repeated tagWuhanEndInfo stEndinfo = 2;		//开口、红中杠等结算信息
+	repeated int32  isFengding = 3;				//是否封顶
+}
+
+
+

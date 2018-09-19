@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="hz_pay_dimen_36">18dp</dimen>
+	<dimen name="hz_pay_dimen_30">15dp</dimen>
+	<dimen name="hz_pay_dimen_48">24dp</dimen>
+	<dimen name="hz_pay_dimen_40">20dp</dimen>
+	<dimen name="hz_pay_dimen_20">10dp</dimen>
+	<dimen name="hz_pay_dimen_21">10.5dp</dimen>
+	<dimen name="hz_pay_dimen_28">14dp</dimen>
+	<dimen name="hz_pay_dimen_24">12dp</dimen>
+	<dimen name="hz_pay_dimen_18">9dp</dimen>
+	<dimen name="hz_pay_dimen_16">8dp</dimen>
+	<dimen name="hz_pay_dimen_14">7dp</dimen>
+	<dimen name="hz_pay_dimen_10">5dp</dimen>
+	<dimen name="hz_pay_dimen_6">3dp</dimen>
+	<dimen name="hz_pay_dimen_37">18.5dp</dimen>
+	<dimen name="hz_pay_dimen_385">192.5dp</dimen>
+	<dimen name="hz_pay_dimen_528">264dp</dimen>
+	<dimen name="hz_pay_dimen_26">13dp</dimen>
+	<dimen name="hz_pay_dimen_82">41dp</dimen>
+	<dimen name="hz_pay_dimen_77">38.5dp</dimen>
+	<dimen name="hz_pay_dimen_100">50dp</dimen>
+	<dimen name="hz_pay_dimen_798">399dp</dimen>
+	<dimen name="hz_pay_dimen_42">21dp</dimen>
+	<dimen name="hz_pay_dimen_363">181.5dp</dimen>
+	<dimen name="hz_pay_dimen_85">42.5dp</dimen>
+
+	<dimen name="hz_pay_dimen_796">398dp</dimen>
+	<dimen name="hz_pay_dimen_500">250dp</dimen>
+	<dimen name="hz_pay_dimen_742">371dp</dimen>
+	<dimen name="hz_pay_dimen_92">46dp</dimen>
+
+	<dimen name="hz_pay_dimen_620">310dp</dimen>
+	<dimen name="hz_pay_dimen_436">218dp</dimen>
+	<dimen name="hz_pay_dimen_32">16dp</dimen>
+	<dimen name="hz_pay_dimen_50">25dp</dimen>
+	<dimen name="hz_pay_dimen_27">13.5dp</dimen>
+	<dimen name="hz_pay_dimen_17">8.5dp</dimen>
+</resources>

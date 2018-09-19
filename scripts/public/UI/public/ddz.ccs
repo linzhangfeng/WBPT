@@ -1,0 +1,202 @@
+<Solution>
+  <PropertyGroup Name="ddz" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="effects">
+          <Image Name="effectmaxuejializi.png" />
+          <ExportJsonFile Name="effects_bqganbei.ExportJson" />
+          <ExportJsonFile Name="effects_bqhongbao.ExportJson" />
+          <Image Name="effects_bqhongbaoj.png" />
+          <ExportJsonFile Name="effects_bqhua.ExportJson" />
+          <ExportJsonFile Name="effects_bqweng.ExportJson" />
+          <ExportJsonFile Name="effects_bqyanhua.ExportJson" />
+          <ExportJsonFile Name="effects_sxuejia1.ExportJson" />
+          <ExportJsonFile Name="effectsbqbianpao.ExportJson" />
+        </Folder>
+        <Folder Name="img">
+          <PlistImageFolder Image="bigface.png" PListFile="bigface.plist" Name=".bigface_PList.Dir">
+            <PlistImageFile Name="public_bomb_bomb1.png" Key="public/bomb/bomb1.png" />
+            <PlistImageFile Name="public_bomb_bomb10.png" Key="public/bomb/bomb10.png" />
+            <PlistImageFile Name="public_bomb_bomb11.png" Key="public/bomb/bomb11.png" />
+            <PlistImageFile Name="public_bomb_bomb12.png" Key="public/bomb/bomb12.png" />
+            <PlistImageFile Name="public_bomb_bomb13.png" Key="public/bomb/bomb13.png" />
+            <PlistImageFile Name="public_bomb_bomb14.png" Key="public/bomb/bomb14.png" />
+            <PlistImageFile Name="public_bomb_bomb15.png" Key="public/bomb/bomb15.png" />
+            <PlistImageFile Name="public_bomb_bomb2.png" Key="public/bomb/bomb2.png" />
+            <PlistImageFile Name="public_bomb_bomb3.png" Key="public/bomb/bomb3.png" />
+            <PlistImageFile Name="public_bomb_bomb4.png" Key="public/bomb/bomb4.png" />
+            <PlistImageFile Name="public_bomb_bomb5.png" Key="public/bomb/bomb5.png" />
+            <PlistImageFile Name="public_bomb_bomb6.png" Key="public/bomb/bomb6.png" />
+            <PlistImageFile Name="public_bomb_bomb7.png" Key="public/bomb/bomb7.png" />
+            <PlistImageFile Name="public_bomb_bomb8.png" Key="public/bomb/bomb8.png" />
+            <PlistImageFile Name="public_bomb_bomb9.png" Key="public/bomb/bomb9.png" />
+            <PlistImageFile Name="public_cheers.png" Key="public/cheers.png" />
+            <PlistImageFile Name="public_cheers_cheers1.png" Key="public/cheers/cheers1.png" />
+            <PlistImageFile Name="public_cheers_cheers10.png" Key="public/cheers/cheers10.png" />
+            <PlistImageFile Name="public_cheers_cheers2.png" Key="public/cheers/cheers2.png" />
+            <PlistImageFile Name="public_cheers_cheers3.png" Key="public/cheers/cheers3.png" />
+            <PlistImageFile Name="public_cheers_cheers4.png" Key="public/cheers/cheers4.png" />
+            <PlistImageFile Name="public_cheers_cheers5.png" Key="public/cheers/cheers5.png" />
+            <PlistImageFile Name="public_cheers_cheers6.png" Key="public/cheers/cheers6.png" />
+            <PlistImageFile Name="public_cheers_cheers7.png" Key="public/cheers/cheers7.png" />
+            <PlistImageFile Name="public_cheers_cheers8.png" Key="public/cheers/cheers8.png" />
+            <PlistImageFile Name="public_cheers_cheers9.png" Key="public/cheers/cheers9.png" />
+            <PlistImageFile Name="public_eggs_egg1.png" Key="public/eggs/egg1.png" />
+            <PlistImageFile Name="public_eggs_egg2.png" Key="public/eggs/egg2.png" />
+            <PlistImageFile Name="public_eggs_egg3.png" Key="public/eggs/egg3.png" />
+            <PlistImageFile Name="public_eggs_egg4.png" Key="public/eggs/egg4.png" />
+            <PlistImageFile Name="public_eggs_egg5.png" Key="public/eggs/egg5.png" />
+            <PlistImageFile Name="public_eggs_egg6.png" Key="public/eggs/egg6.png" />
+            <PlistImageFile Name="public_firecrackers.png" Key="public/firecrackers.png" />
+            <PlistImageFile Name="public_fireworks.png" Key="public/fireworks.png" />
+            <PlistImageFile Name="public_flower.png" Key="public/flower.png" />
+            <PlistImageFile Name="public_flower_flower1.png" Key="public/flower/flower1.png" />
+            <PlistImageFile Name="public_flower_flower10.png" Key="public/flower/flower10.png" />
+            <PlistImageFile Name="public_flower_flower2.png" Key="public/flower/flower2.png" />
+            <PlistImageFile Name="public_flower_flower3.png" Key="public/flower/flower3.png" />
+            <PlistImageFile Name="public_flower_flower4.png" Key="public/flower/flower4.png" />
+            <PlistImageFile Name="public_flower_flower5.png" Key="public/flower/flower5.png" />
+            <PlistImageFile Name="public_flower_flower6.png" Key="public/flower/flower6.png" />
+            <PlistImageFile Name="public_flower_flower7.png" Key="public/flower/flower7.png" />
+            <PlistImageFile Name="public_flower_flower8.png" Key="public/flower/flower8.png" />
+            <PlistImageFile Name="public_flower_flower9.png" Key="public/flower/flower9.png" />
+            <PlistImageFile Name="public_kiss.png" Key="public/kiss.png" />
+            <PlistImageFile Name="public_kiss_kiss1.png" Key="public/kiss/kiss1.png" />
+            <PlistImageFile Name="public_kiss_kiss10.png" Key="public/kiss/kiss10.png" />
+            <PlistImageFile Name="public_kiss_kiss2.png" Key="public/kiss/kiss2.png" />
+            <PlistImageFile Name="public_kiss_kiss3.png" Key="public/kiss/kiss3.png" />
+            <PlistImageFile Name="public_kiss_kiss4.png" Key="public/kiss/kiss4.png" />
+            <PlistImageFile Name="public_kiss_kiss5.png" Key="public/kiss/kiss5.png" />
+            <PlistImageFile Name="public_kiss_kiss6.png" Key="public/kiss/kiss6.png" />
+            <PlistImageFile Name="public_kiss_kiss7.png" Key="public/kiss/kiss7.png" />
+            <PlistImageFile Name="public_kiss_kiss8.png" Key="public/kiss/kiss8.png" />
+            <PlistImageFile Name="public_kiss_kiss9.png" Key="public/kiss/kiss9.png" />
+            <PlistImageFile Name="public_redbag.png" Key="public/redbag.png" />
+            <PlistImageFile Name="public_shoe_shoe1.png" Key="public/shoe/shoe1.png" />
+            <PlistImageFile Name="public_shoe_shoe2.png" Key="public/shoe/shoe2.png" />
+            <PlistImageFile Name="public_shoe_shoe3.png" Key="public/shoe/shoe3.png" />
+            <PlistImageFile Name="public_shoe_shoe4.png" Key="public/shoe/shoe4.png" />
+            <PlistImageFile Name="public_shoe_shoe5.png" Key="public/shoe/shoe5.png" />
+            <PlistImageFile Name="public_shoe_shoe6.png" Key="public/shoe/shoe6.png" />
+            <PlistImageFile Name="public_shoe_shoe7.png" Key="public/shoe/shoe7.png" />
+            <PlistImageFile Name="public_shoe_shoe8.png" Key="public/shoe/shoe8.png" />
+            <PlistImageFile Name="public_shoe_shoe9.png" Key="public/shoe/shoe9.png" />
+            <PlistImageFile Name="public_xuejia.png" Key="public/xuejia.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="dialog.png" PListFile="dialog.plist" Name=".dialog_PList.Dir">
+            <PlistImageFile Name="public_btn_004.png" Key="public/btn_004.png" />
+            <PlistImageFile Name="public_btn_005.png" Key="public/btn_005.png" />
+            <PlistImageFile Name="public_btn_020.png" Key="public/btn_020.png" />
+            <PlistImageFile Name="public_btn_021.png" Key="public/btn_021.png" />
+            <PlistImageFile Name="public_btn_022.png" Key="public/btn_022.png" />
+            <PlistImageFile Name="public_btn_023.png" Key="public/btn_023.png" />
+            <PlistImageFile Name="public_btn_104.png" Key="public/btn_104.png" />
+            <PlistImageFile Name="public_btn_120.png" Key="public/btn_120.png" />
+            <PlistImageFile Name="public_btn_121.png" Key="public/btn_121.png" />
+            <PlistImageFile Name="public_btn_122.png" Key="public/btn_122.png" />
+            <PlistImageFile Name="public_btn_123.png" Key="public/btn_123.png" />
+            <PlistImageFile Name="public_icon_bg_007.png" Key="public/icon_bg_007.png" />
+            <PlistImageFile Name="public_icon_bg_009.png" Key="public/icon_bg_009.png" />
+            <PlistImageFile Name="public_icon_bg_011.png" Key="public/icon_bg_011.png" />
+            <PlistImageFile Name="public_icon_bg_012.png" Key="public/icon_bg_012.png" />
+            <PlistImageFile Name="public_icon_bg_013.png" Key="public/icon_bg_013.png" />
+            <PlistImageFile Name="public_icon_bg_200.png" Key="public/icon_bg_200.png" />
+            <PlistImageFile Name="public_icon_bg_201.png" Key="public/icon_bg_201.png" />
+            <PlistImageFile Name="public_icon_bg_202.png" Key="public/icon_bg_202.png" />
+            <PlistImageFile Name="public_icon_bg_203.png" Key="public/icon_bg_203.png" />
+            <PlistImageFile Name="public_icon_bg_204.png" Key="public/icon_bg_204.png" />
+            <PlistImageFile Name="public_icon_coin.png" Key="public/icon_coin.png" />
+            <PlistImageFile Name="public_icon_sex0.png" Key="public/icon_sex0.png" />
+            <PlistImageFile Name="public_icon_sex1.png" Key="public/icon_sex1.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="video.png" PListFile="video.plist" Name=".video_PList.Dir">
+            <PlistImageFile Name="public_btn_050.png" Key="public/btn_050.png" />
+            <PlistImageFile Name="public_btn_052.png" Key="public/btn_052.png" />
+            <PlistImageFile Name="public_btn_053.png" Key="public/btn_053.png" />
+            <PlistImageFile Name="public_btn_054.png" Key="public/btn_054.png" />
+            <PlistImageFile Name="public_btn_055.png" Key="public/btn_055.png" />
+            <PlistImageFile Name="public_btn_056.png" Key="public/btn_056.png" />
+            <PlistImageFile Name="public_btn_150.png" Key="public/btn_150.png" />
+            <PlistImageFile Name="public_btn_152.png" Key="public/btn_152.png" />
+            <PlistImageFile Name="public_btn_153.png" Key="public/btn_153.png" />
+            <PlistImageFile Name="public_btn_154.png" Key="public/btn_154.png" />
+            <PlistImageFile Name="public_btn_155.png" Key="public/btn_155.png" />
+            <PlistImageFile Name="public_btn_156.png" Key="public/btn_156.png" />
+            <PlistImageFile Name="public_icon_tip.png" Key="public/icon_tip.png" />
+            <PlistImageFile Name="public_process_bg.png" Key="public/process_bg.png" />
+            <PlistImageFile Name="public_process_fg.png" Key="public/process_fg.png" />
+            <PlistImageFile Name="public_process_point.png" Key="public/process_point.png" />
+          </PlistImageFolder>
+        </Folder>
+        <Folder Name="sound">
+          <Folder Name="bigface">
+            <Audio Name="F_jidan.mp3" />
+            <Audio Name="F_kiss.mp3" />
+            <Audio Name="F_pijiu.mp3" />
+            <Audio Name="F_tuoxie.mp3" />
+            <Audio Name="f_wen.mp3" />
+            <Audio Name="F_xianhua.mp3" />
+            <Audio Name="F_zhadan.mp3" />
+            <Audio Name="firecrackers.mp3" />
+            <Audio Name="fireworks.mp3" />
+            <Audio Name="jidan.mp3" />
+            <Audio Name="M_jidan.mp3" />
+            <Audio Name="M_kiss.mp3" />
+            <Audio Name="M_pijiu.mp3" />
+            <Audio Name="M_tuoxie.mp3" />
+            <Audio Name="m_wen.mp3" />
+            <Audio Name="M_xianhua.mp3" />
+            <Audio Name="M_zhadan.mp3" />
+            <Audio Name="pijiu.mp3" />
+            <Audio Name="redbag.mp3" />
+            <Audio Name="tuoxie.mp3" />
+            <Audio Name="xianhua.mp3" />
+            <Audio Name="xuejia.mp3" />
+            <Audio Name="zhadan.mp3" />
+          </Folder>
+          <Folder Name="fastchat">
+            <Audio Name="m_fengshui.mp3" />
+            <Audio Name="m_gaoxing.mp3" />
+            <Audio Name="m_moji.mp3" />
+            <Audio Name="m_shuguang.mp3" />
+            <Audio Name="m_tainiu.mp3" />
+            <Audio Name="m_tongsha.mp3" />
+            <Audio Name="m_wode.mp3" />
+            <Audio Name="m_wugui.mp3" />
+            <Audio Name="m_xiashou.mp3" />
+            <Audio Name="m_xiazhu.mp3" />
+            <Audio Name="w_fengshui.mp3" />
+            <Audio Name="w_gaoxing.mp3" />
+            <Audio Name="w_moji.mp3" />
+            <Audio Name="w_shuguang.mp3" />
+            <Audio Name="w_tainiu.mp3" />
+            <Audio Name="w_tongsha.mp3" />
+            <Audio Name="w_wode.mp3" />
+            <Audio Name="w_wugui.mp3" />
+            <Audio Name="w_xiashou.mp3" />
+            <Audio Name="w_xiazhu.mp3" />
+          </Folder>
+          <Audio Name="time_click.mp3" />
+        </Folder>
+        <Project Name="bigfaceCL.csd" Type="Node" />
+        <Project Name="bigfaceCL1.csd" Type="Node" />
+        <Project Name="bigfaceCR.csd" Type="Node" />
+        <Project Name="bigfaceCR1.csd" Type="Node" />
+        <Project Name="bigfaceCT.csd" Type="Node" />
+        <Project Name="bigfaceCT1.csd" Type="Node" />
+        <Project Name="bigfaceLL.csd" Type="Node" />
+        <Project Name="bigfaceLL1.csd" Type="Node" />
+        <Project Name="bigfaceLR.csd" Type="Node" />
+        <Project Name="bigfaceLR1.csd" Type="Node" />
+        <Project Name="cxBigface.csd" Type="Layer" />
+        <Project Name="ddzBigface.csd" Type="Layer" />
+        <Project Name="ddzUserInfo.csd" Type="Layer" />
+        <Project Name="phz1Bigface.csd" Type="Layer" />
+        <Project Name="phzBigface.csd" Type="Layer" />
+        <Project Name="phzUserInfo.csd" Type="Layer" />
+        <Project Name="video.csd" Type="Layer" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

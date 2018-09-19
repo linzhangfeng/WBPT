@@ -1,0 +1,1 @@
+node version_generator.js -s Resources/js -d Resources/js/ddz/version/ -sEx ddz/ -vEx ddz/version/  -v 2.0.09

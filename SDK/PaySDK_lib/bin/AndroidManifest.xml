@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tencent.tmgp.wbdp"
+    android:installLocation="auto"
+    android:versionCode="200600"
+    android:versionName="2.8.1" >
+
+    <uses-sdk android:minSdkVersion="9" />
+
+    <uses-feature android:glEsVersion="0x00020000" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+
+        <!--game config begin -->
+        <meta-data
+            android:name="android.app.lib_name" 
+            android:value="cocos2dcpp" />
+        <meta-data
+            android:name="login_sdk"
+            android:value="ihuizhi" />
+        <meta-data
+            android:name="pay_sdk"
+            android:value="ihuizhi" />
+        <meta-data
+            android:name="third_login"
+            android:value="0" />
+
+        <meta-data
+            android:name="channel_id"
+            android:value="\o86011001" />
+        
+        <meta-data
+            android:name="TalkingDataID"
+            android:value="1A924E5FEFFB44908C66FB8260700BFB" />
+        
+        <activity
+            android:name="com.rwhz.app.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            
+                         <!-- <intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter> -->
+			
+        </activity>
+        <!--game config end -->
+        
+        <!-- pay sdk begin  -->
+        
+       <activity
+            android:name="com.ihuizhi.club.qp.StartActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            
+             <intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			
+             <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="shareapp"
+                    android:host="iwanbei"
+                    android:pathPrefix="/openwith"/>
+            </intent-filter>
+            
+        </activity>
+        
+        <activity
+            android:name="com.rwhz.zjh.PaymentActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/hz_pay_theme" />
+
+        <!-- 支付宝Activity -->
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+        </activity>
+        
+        <!-- 银联支付请求 activity(start) -->
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.tencent.tmgp.wbdp.wxapi.WXPayEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        
+        <activity
+            android:name="com.tencent.tmgp.wbdp.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        
+        <!-- 微信id 仅支付使用 登录 分享 使用其他appid-->
+         <meta-data
+            android:name="WX_APPID"
+            android:value="wx1c62fa14eff80ea4"/>
+         
+        <!-- pay sdk end -->
+        
+        <!-- shareSDK -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <!-- QQ和QQ空间分享 QQ登录的回调必须要配置的 -->
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 新浪微博客户端分享回调必须配置 -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+                <!-- baidu sdk -->
+        <!-- Map -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="l9XSdRMjdDMorLT0ZzWst5F9" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+    </application>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <!-- 游戏基本配置 begin -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 游戏基本配置 end -->
+    
+    <!-- shareSDK -->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"/>
+    
+        <!-- baidu sdk -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+</manifest>

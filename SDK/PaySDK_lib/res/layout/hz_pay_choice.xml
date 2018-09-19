@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="horizontal"
+              android:paddingLeft="@dimen/hz_pay_dimen_37"
+              android:paddingRight="@dimen/hz_pay_dimen_37">
+
+	<LinearLayout
+		android:layout_width="@dimen/hz_pay_dimen_385"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/hz_pay_dimen_14"
+			android:text="@string/hz_pay_recharge_details_text"
+			android:textColor="@color/hz_pay_7c7c7c"
+			android:textSize="@dimen/hz_pay_dimen_24"/>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/hz_pay_dimen_528"
+			android:layout_marginTop="@dimen/hz_pay_dimen_14"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="@dimen/hz_pay_dimen_82"
+				android:background="@drawable/hz_pay_top"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:paddingLeft="@dimen/hz_pay_dimen_24"
+				android:paddingRight="@dimen/hz_pay_dimen_10">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/hz_pay_account_text"
+					android:textColor="@color/hz_pay_7c7c7c"
+					android:textSize="@dimen/hz_pay_dimen_26"/>
+
+				<TextView
+					android:id="@+id/hz_pay_account_tv"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:singleLine="true"
+					android:text="SB13425"
+					android:textColor="@color/hz_pay_32353c"
+					android:textSize="@dimen/hz_pay_dimen_26"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="@dimen/hz_pay_dimen_82"
+				android:background="@drawable/hz_pay_middle"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:paddingLeft="@dimen/hz_pay_dimen_24"
+				android:paddingRight="@dimen/hz_pay_dimen_10">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/hz_pay_goods_text"
+					android:textColor="@color/hz_pay_7c7c7c"
+					android:textSize="@dimen/hz_pay_dimen_26"/>
+
+				<TextView
+					android:id="@+id/hz_pay_goods_tv"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:singleLine="true"
+					android:text="豹子王充值5钻石"
+					android:textColor="@color/hz_pay_32353c"
+					android:textSize="@dimen/hz_pay_dimen_26"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="@dimen/hz_pay_dimen_82"
+				android:background="@drawable/hz_pay_middle"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:paddingLeft="@dimen/hz_pay_dimen_24"
+				android:paddingRight="@dimen/hz_pay_dimen_10">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/hz_pay_money_text"
+					android:textColor="@color/hz_pay_7c7c7c"
+					android:textSize="@dimen/hz_pay_dimen_26"/>
+
+				<TextView
+					android:id="@+id/hz_pay_money_tv"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:singleLine="true"
+					android:text="￥60"
+					android:textColor="@color/hz_pay_0082cb"
+					android:textSize="@dimen/hz_pay_dimen_36"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:background="@drawable/hz_pay_bottom"
+				android:orientation="vertical"
+				android:paddingBottom="@dimen/hz_pay_dimen_20"
+				android:paddingLeft="@dimen/hz_pay_dimen_24"
+				android:paddingRight="@dimen/hz_pay_dimen_10"
+				android:paddingTop="@dimen/hz_pay_dimen_20">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/hz_pay_help_text"
+					android:textColor="@color/hz_pay_7c7c7c"
+					android:textSize="@dimen/hz_pay_dimen_24"/>
+
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/hz_pay_dimen_6"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/hz_pay_help_1"
+						android:textColor="@color/hz_pay_7c7c7c"
+						android:textSize="@dimen/hz_pay_dimen_20"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/hz_pay_help_tips1"
+						android:textColor="@color/hz_pay_7c7c7c"
+						android:textSize="@dimen/hz_pay_dimen_20"/>
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/hz_pay_dimen_6"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/hz_pay_help_2"
+						android:textColor="@color/hz_pay_7c7c7c"
+						android:textSize="@dimen/hz_pay_dimen_20"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/hz_pay_help_tips2"
+						android:textColor="@color/hz_pay_7c7c7c"
+						android:textSize="@dimen/hz_pay_dimen_20"/>
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/hz_pay_dimen_6"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/hz_pay_help_3"
+						android:textColor="@color/hz_pay_7c7c7c"
+						android:textSize="@dimen/hz_pay_dimen_20"/>
+
+					<LinearLayout
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<LinearLayout
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:orientation="horizontal">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="@string/hz_pay_help_tips3"
+								android:textColor="@color/hz_pay_7c7c7c"
+								android:textSize="@dimen/hz_pay_dimen_20"/>
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="@string/hz_pay_help_tips5"
+								android:textColor="@color/hz_pay_black"
+								android:textSize="@dimen/hz_pay_dimen_20"/>
+						</LinearLayout>
+
+						<LinearLayout
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:orientation="horizontal">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="@string/hz_pay_help_tips4"
+								android:textColor="@color/hz_pay_7c7c7c"
+								android:textSize="@dimen/hz_pay_dimen_20"/>
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="@string/hz_pay_help_tips6"
+								android:textColor="@color/hz_pay_black"
+								android:textSize="@dimen/hz_pay_dimen_20"/>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/hz_pay_dimen_20"
+		android:layout_weight="1"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/hz_pay_dimen_14"
+			android:text="@string/hz_pay_choice_text"
+			android:textColor="@color/hz_pay_7c7c7c"
+			android:textSize="@dimen/hz_pay_dimen_24"/>
+
+		<FrameLayout
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/hz_pay_dimen_528"
+			android:layout_marginTop="@dimen/hz_pay_dimen_14">
+
+			<ImageView
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_gravity="top"
+				android:layout_marginTop="@dimen/hz_pay_dimen_100"
+				android:background="@drawable/hz_pay_bottom"/>
+
+			<ListView
+				android:id="@+id/hz_pay_way_lv"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_marginBottom="@dimen/hz_pay_dimen_20"
+				android:cacheColorHint="#0000"
+				android:divider="@null"
+				android:listSelector="#0000"/>
+		</FrameLayout>
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,204 @@
+package PGame;
+
+//登录请求
+message LoginReq
+{
+	required int32	uid 				= 1;
+	optional string skey 				= 2;
+	optional string roomid 				= 3;
+}
+//登录失败
+message LoginErrAck
+{
+	required int32 		uid 			= 1;
+	optional int32	 	code			= 2;
+}
+
+message LogoutLogoutSuccAck
+{
+	optional int32	uid					= 1;
+	optional int32	seatid				= 2;
+	optional int32 	type				= 3;
+}
+//准备
+message ReadyReq
+{
+	optional int32 ready				= 1;//0--取消准备 1--准备
+}
+
+message ReadyAck
+{
+	optional int32 uid 					= 1;
+	optional int32 seatid 				= 2;
+	optional int32 ready 				= 3;//0--未准备 1--准备
+}
+//聊天
+message ChatReq
+{
+	optional string text 				= 1;
+	optional int32	chatid				= 2;
+}
+//掉线
+message OfflineAck
+{
+	optional int32	seatid				= 1;
+	optional int32 	uid					= 2;
+}
+//超时
+message TimeoutAck
+{
+	optional int32 	seatid				= 1;
+	optional int32	uid					= 2;
+	optional int32	timeout_type		= 3; //0-操作超时 1--掉线超时
+}
+message ChatAck
+{
+	optional int32	seatid				= 1;
+	optional int32 	uid					= 2;
+	optional string	name				= 3;
+	optional int32	sex					= 4;
+	optional string text 				= 5;
+	optional int32	chatid				= 6;//快捷发言id
+}
+//聊天表情？？
+message FaceReq
+{
+	required int32 faceid				= 1;
+}
+
+message FaceAck
+{
+	required int32	faceid				= 1;
+	optional int32	seatid				= 2;
+	optional int32	uid					= 3;
+	optional string name				= 4;
+	optional int32	sex					= 5;
+}
+//聊天扔鸡蛋
+message EmotionReq
+{
+	optional int32	target_seatid		= 1;
+	optional int32	type				= 2;
+}
+
+message EmotionAck
+{
+	optional int32	seatid				= 1;
+	optional int32	target_seatid		= 2;
+	optional int32	type				= 3;
+	optional int32	money				= 4;
+}
+//托管
+message RobotReq
+{
+	optional int32	robot				= 1;
+}
+
+message RobotAck
+{
+	optional int32	uid					= 1;
+	optional int32 	seatid				= 2;
+	optional int32	robot				= 3;
+}
+
+message UptableErrAck
+{
+	optional int32 		uid				= 1;
+	optional int32		code			= 2;
+	optional int32		money			= 3;
+}
+//登录成功 上桌成功
+message UptableSuccAck
+{
+	required UserInfo player			= 1;
+}
+
+//下一轮自动下桌
+message AheadDowntableAck
+{
+	optional int32	uid					= 1;
+	optional int32	seatid				= 2;
+	optional int32	down_tag			= 3;
+}
+
+message DowntableSuccAck
+{
+	optional int32	uid					= 1;
+	optional int32	seatid				= 2;
+	optional int32	money				= 3;
+	optional int32	type				= 4;
+}
+
+//申请解散房间失败
+message ApplyDisRoomErrAck
+{
+	required int32		code			= 1;
+}
+//申请成功
+message ApplyDisRoomSuccAck
+{
+	optional int32	uid					= 1;
+	repeated int32	voters_uid			= 2;
+	optional int32	remain_time			= 3;
+}
+//解散房间投票
+message VoteDisRoomReq
+{
+	optional int32	action				= 1;//0--反对 1--同意
+}
+//投票成功
+message VoteDisRoomAck
+{
+	optional int32 	uid					= 1;
+	optional int32	action				= 2;//0--反对 1--同意
+}
+//解散结果
+message DisRoomResultAck
+{
+	optional int32 	result				= 1;//1--解散成功 0--解散失败
+}
+//用户信息
+message UserInfo
+{
+	required int32	uid 				= 1;
+	optional int32 	seatid 				= 2;
+	optional string name 				= 3;
+	optional string avatar 				= 4;
+	optional int32	sex 				= 5;
+	optional int32  rmb 				= 6;
+	optional int32	money				= 7;
+	optional int32 	ready 				= 8;
+	optional int32 	robot 				= 9;
+	optional int32 	usertype 			= 10;
+	optional int32	offline 			= 11;
+	optional int32 	card_nums			= 12;
+	optional int32	mingpai_start		= 13;
+	optional int32	base_double			= 14;
+	optional int32	mingpai_play		= 15;
+	optional int32	qiangguan			= 16;
+	optional int32	max_score			= 17;
+	optional int32	bomb_cnt			= 18;
+	optional int32	total_win			= 19;
+	optional int32	total_lose			= 20;
+	optional int32	total_score			= 21;
+	repeated int32	holes				= 22;
+	
+}
+//请求平台游戏开始返回
+message GameStartAck
+{
+	optional int32	can_start			= 1;
+	optional int32	code				= 2;
+	optional int32 	status				= 3;
+	optional int32	ts					= 4;
+}
+//错误码
+enum ErrCode
+{
+	DIS_ROOM_MORETHAN_TWICE_ERR			= 101;//申请解散房间失败已超过2次 
+	USER_ALREADY_IN_SEAT_ERR			= 102;//上桌失败玩家已在桌子上
+	USER_NO_MONEY_UPTABLE_ERR			= 104;//上桌失败金币不足
+	NO_UPTABLE_SEAT_ERR					= 105;//上桌失败没有座位了
+	USER_NO_MONEY_LOGIN_ERR 			= 508;//登录失败金币不足
+	ROOM_STATUS_ERR		 				= 608;//登录失败房间已解散或结束
+}
